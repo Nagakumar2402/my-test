@@ -19,7 +19,7 @@ const all = [
     id: 3,
     name: "Animals Interactions ",
     Image:
-      "https://i.pinimg.com/564x/c0/55/72/c05572a8a64ff6ab9ead91cad8e23417.jpg",
+      "https://i.ibb.co/rHfnp8v/Screenshot-2023-09-07-22-17-47-86-99c04817c0de5652397fc8b56c3b3817.jpg",
     description:
       "Guests can feed and pet a diverse selection of domesticated animals, creating unforgettable moments of connection between humans and animals.",
   },

@@ -2,13 +2,13 @@ import React from "react";
 import lists from "../utils/all";
 const Service = () => {
   return (
-    <div className="bg-green-50 ">
+    <div className="mt-0 bg-[#FFFFDD] md:mt-20 font-sans">
       <div className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:pt-20">
-        <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-green-800 font-Oswald ">
+        <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-green-700 font-Oswald ">
           We have <br />
-          many <span className="text-green-900">Category Event</span>
+          many <span className="text-[#016A70]">Category Event</span>
         </h1>
-        <p className="py-5 text-lg font-thin text-justify text-gray-500">
+        <p className="py-5 font-thin leading-10 tracking-wide text-gray-500 w-[90%] text-md ">
           <span className="font-bold ">At Zootopia - The Funyard</span>, we
           believe in promoting empathy, respect for animals, and responsible
           animal care, making every visit a valuable learning experience.

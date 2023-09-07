@@ -5,7 +5,9 @@ import HeroBanner from "./components/HeroOne";
 import Service from "./components/Service";
 import About from "./components/About";
 import { Faq } from "./components/Fqa";
+import { Location } from "./components/Location";
 import { Pricing } from "./components/Pricing";
+import { FooterOne } from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,8 +16,10 @@ const App = () => {
       <HeroBanner />
       <Service />
       <About />
-      <Faq />
       <Pricing />
+      <Faq />
+      <Location />
+      <FooterOne />
     </div>
   );
 };

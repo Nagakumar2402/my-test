@@ -12,9 +12,9 @@ export const Faq = () => {
   };
 
   return (
-    <section className="max-w-full px-2 py-10 mx-auto md:px-0 bg-green-50">
+    <section className="max-w-full px-2 py-10 mx-auto md:px-0 bg-[#F0F0F0]">
       <div className="max-w-2xl mx-auto lg:text-center">
-        <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-bold leading-normal text-gray-700 sm:text-4xl lg:text-5xl">
           Frequently Asked Questions
         </h2>
         <p className="max-w-xl mt-4 text-base leading-relaxed text-gray-600 lg:mx-auto">

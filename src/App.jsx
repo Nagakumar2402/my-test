@@ -17,8 +17,8 @@ const App = () => {
       <Service />
       <About />
       <Pricing />
-      <Faq />
       <Location />
+      <Faq />
       <FooterOne />
     </div>
   );

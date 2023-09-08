@@ -7,13 +7,13 @@ export function Location() {
   return (
     <div className="mx-auto my-8 max-w-7xl bg-[#FFF6E0]">
       <div className="px-4 lg:grid lg:grid-cols-12 lg:gap-x-6">
-        <div className="px-4 py-10 lg:col-span-5 lg:px-0">
+        <div className="px-20 py-10 place-items-center lg:col-span-5 lg:px-0">
           <span className="inline-block p-1 px-3 mb-8 text-xs font-semibold border rounded-full">
             Pricing that fits your budget
           </span>
           <h1 className="text-3xl font-bold md:text-5xl">Zootopia Timing</h1>
           <div className="flex flex-col my-8 gap-y-6 md:flex-row lg:justify-around">
-            <div className="px-2 space-y-3 md:w-1/2 ">
+            <div className="px-2 space-y-3 md:w-full ">
               <BiMapPin className="w-5 h-5" />
               <h3 className="text-xl font-semibold">Address</h3>
               <p className="w-full text-xl font-semibold text-gray-900">
@@ -31,7 +31,7 @@ export function Location() {
         </div>
         <div className="flex flex-col items-center justify-center md:flex-row lg:col-span-7">
           <div className="w-full p-5 md:w-3/4">
-            <div className="bg-white border rounded-md bg-opacity-90 font-Oswald">
+            <div className="bg-[#FFF6E0] border-4 shadow-2xl border-white rounded-md bg-opacity-90 font-Oswald">
               <div className="border-b ">
                 <div className="px-9 py-7">
                   <h3 className="mb-3 text-xl font-bold leading-snug text-gray-900">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Details = () => {
   return (
-    <section className="px-2 py-20 md:px-0 bg-[#A2C579] shadow-2xl">
+    <section className="px-2 py-20  md:px-4 rounded-md bg-[#A2C579] shadow-2xl">
       <div className="max-w-4xl mx-auto ">
         <div className="md:flex md:items-center md:justify-center md:space-x-14">
           <div className="relative flex-shrink-0 w-48 h-72">

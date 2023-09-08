@@ -16,7 +16,7 @@ const HeroBanner = () => {
         showStatus={false}
         interval={3000}
       >
-        <div className="w-full font-Oswald  h-[700px] overflow-hidden ">
+        <div className="w-full overflow-hidden font-Oswald ">
           <div className="relative h-screen overflow-hidden bg-[#86b979] ">
             <img
               src={one}
@@ -24,7 +24,7 @@ const HeroBanner = () => {
             />
 
             <div className="container relative z-10 flex items-center w-4/5 py-16 mx-auto my-24 border-4 border-white rounded-lg md:my-32">
-              <div className="relative z-10 flex flex-col items-center justify-between w-full opacity-30">
+              <div className="relative z-10 flex flex-col items-center justify-between w-full opacity-30aaaaaaaaaaaa ">
                 <p className="flex flex-col items-center text-6xl font-extrabold text-center text-black md:text-8xl">
                   Zootopia - The Funyard
                 </p>

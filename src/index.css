@@ -10,5 +10,5 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .text-stroke-3 {
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 3px #000;
 }

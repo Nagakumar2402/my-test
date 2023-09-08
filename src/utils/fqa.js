@@ -1,4 +1,4 @@
-const fqa = [
+const faqs = [
   {
     question: "What are the operating hours of Zootopia - The Funyard?",
     answer:
@@ -52,6 +52,57 @@ const fqa = [
     answer:
       "We are located in Pataudi, Haryana. You can find detailed directions and a map on our website.",
   },
+  {
+    question: "What are the entry charges for Zootopia - The Funyard?",
+    answer: "The entry charges are Rs 500 per person.",
+  },
+  {
+    question: "Are there any additional charges for feeding the animals?",
+    answer: "Yes, there are additional feeding charges of Rs 250 per person.",
+  },
+  {
+    question: "What is the 'Treat feed' option, and how much does it cost?",
+    answer:
+      "'Treat feed' allows you to buy food in large quantity and feed the animals. It costs Rs 1250.",
+  },
+  {
+    question: "What are the contact details for Zootopia - The Funyard?",
+    answer: "You can contact us at 8586979831 or 8586979834.",
+  },
+  {
+    question:
+      "Can I purchase tickets online, or do I need to buy them at the entrance?",
+    answer: "Tickets can be purchased both online and at the entrance.",
+  },
+  {
+    question: "Is there parking available for visitors?",
+    answer: "Yes, we have parking facilities for visitors.",
+  },
+  {
+    question: "Do you offer group discounts or packages for larger groups?",
+    answer:
+      "Yes, we offer group discounts and packages. Contact us for more information.",
+  },
+  {
+    question:
+      "Is there a specific day of the week when Zootopia - The Funyard is closed?",
+    answer: "We are open seven days a week.",
+  },
+  {
+    question:
+      "Are there any rules or guidelines for interacting with the animals?",
+    answer:
+      "Yes, we have guidelines to ensure the safety of both visitors and animals. Please follow our staff's instructions.",
+  },
+  {
+    question: "Do you have any facilities for people with disabilities?",
+    answer:
+      "Yes, we have facilities to accommodate visitors with disabilities. Please let us know your specific needs in advance.",
+  },
+  {
+    question: "Is there a gift shop or souvenir store on the premises?",
+    answer: "Yes, we have a gift shop where you can purchase souvenirs.",
+  },
 ];
 
-export default fqa;
+export default faqs;

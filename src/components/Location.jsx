@@ -5,9 +5,9 @@ export function Location() {
   const CheckCircle = BsCheck2Circle;
 
   return (
-    <div className="mx-auto my-8 max-w-7xl bg-[#FFF6E0]">
+    <div className="mx-auto py-20  max-w-full bg-[#FFF6E0]">
       <div className="px-4 lg:grid lg:grid-cols-12 lg:gap-x-6">
-        <div className="px-20 py-10 place-items-center lg:col-span-5 lg:px-0">
+        <div className="px-20 py-10 place-items-center lg:col-span-5 lg:px-20">
           <span className="inline-block p-1 px-3 mb-8 text-xs font-semibold border rounded-full">
             Pricing that fits your budget
           </span>

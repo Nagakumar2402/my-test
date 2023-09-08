@@ -12,14 +12,13 @@ export const Faq = () => {
   };
 
   return (
-    <section className="max-w-full px-2 py-10 mx-auto md:px-0 bg-[#F0F0F0]">
+    <section className="max-w-full px-2 py-20 mx-auto md:px-0 bg-[#F0F0F0]">
       <div className="max-w-2xl mx-auto lg:text-center">
-        <h2 className="text-3xl font-bold leading-normal text-gray-700 sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-bold text-gray-700 sm:text-4xl lg:text-5xl">
           Frequently Asked Questions
         </h2>
-        <p className="max-w-xl mt-4 text-base leading-relaxed text-gray-600 lg:mx-auto">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
-          assumenda
+        <p className="max-w-xl mt-4 text-base leading-normal text-gray-600 lg:mx-auto">
+          Here's a list of frequently asked questions (FAQs)
         </p>
       </div>
 

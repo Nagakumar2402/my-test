@@ -22,8 +22,12 @@ export function Pricing() {
               <p className="mt-3 text-sm text-gray-600">
                 {service.description}
               </p>
-              <h3 className="mt-3 text-base font-extrabold text-gray-900">
-                Price :{service.price} Rs
+              <h3 className="mt-3 text-base text-gray-700">
+                Price :
+                <span className="font-extrabold text-black">
+                  {service.price}
+                </span>{" "}
+                Rs
               </h3>
               <button
                 type="button"

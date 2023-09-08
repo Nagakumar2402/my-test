@@ -11,26 +11,10 @@ const HeroBanner = () => {
       <Carousel
         autoPlay={true}
         infiniteLoop={true}
-        showThumbs={false}
+        showThumbs={true}
         showIndicators={false}
         showStatus={false}
         interval={3000}
-        renderArrowPrev={(clickHandler, hasPrev) => (
-          <div
-            onClick={clickHandler}
-            className="absolute right-[31px] md:right-[51px] bottom-2 w-[30px] md:w-[50px] h-[30px] md:h-[50px] bg-[#86b979] transition-all  duration-200 hover:bg-[#86b979] border-2 z-10 flex items-center justify-center cursor-pointer hover:opacity-90 md:mx-2"
-          >
-            <BiArrowBack className="text-sm text-black hover:scale-150 md:text-md" />
-          </div>
-        )}
-        renderArrowNext={(clickHandler, hasNext) => (
-          <div
-            onClick={clickHandler}
-            className="absolute right-0 bottom-2  w-[30px] md:w-[50px] h-[30px] md:h-[50px] bg-[#86b979] transition-all duration-200 hover:bg-[#86b979] border-2 z-10 flex items-center justify-center cursor-pointer hover:opacity-90"
-          >
-            <BiArrowBack className="text-sm text-black rotate-180 hover:scale-150 md:text-md" />
-          </div>
-        )}
       >
         <div className="w-full font-Oswald  h-[700px] overflow-hidden ">
           <div className="relative h-screen overflow-hidden bg-[#86b979] ">
@@ -57,16 +41,12 @@ const HeroBanner = () => {
               </div>
             </div>
           </div>
-
-          <div className="px-[15px] md:mx-3 md:px-[40px] py-[8px] md:py-[15px] rounded-lg font-oswald bg-[#86b979] border-2 border-white absolute md:bottom-2 left-0 text-black   text-sm md:text-md capitalize font-medium cursor-pointer hover:opacity-90">
-            Book now
-          </div>
         </div>
-        <div className="w-full font-Oswald  h-[700px] overflow-hidden ">
+        <div className="w-full font-Oswald  md:h-[700px] overflow-hidden ">
           <div className="relative h-screen overflow-hidden bg-[#86b979] ">
             <img
               src="https://images.unsplash.com/photo-1561016444-14f747499547?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2231&q=80"
-              className="absolute object-cover object-center transform -translate-x-1/2 -translate-y-1/2 opacity-30 top-1/2 left-1/2"
+              className="absolute object-cover object-center transform -translate-x-1/2 -translate-y-1/2 aspect-[16/9] md:aspect-auto opacity-30 top-1/2 left-1/2"
             />
 
             <div className="container relative z-10 flex items-center w-4/5 py-16 mx-auto my-24 border-4 border-white rounded-lg md:my-32">
@@ -86,10 +66,6 @@ const HeroBanner = () => {
                 </a>
               </div>
             </div>
-          </div>
-
-          <div className="px-[15px] md:mx-3 md:px-[40px] py-[8px] md:py-[15px] rounded-lg font-oswald bg-[#86b979] border-2 border-white absolute md:bottom-2 left-0 text-black   text-sm md:text-md capitalize font-medium cursor-pointer hover:opacity-90">
-            Book now
           </div>
         </div>
       </Carousel>

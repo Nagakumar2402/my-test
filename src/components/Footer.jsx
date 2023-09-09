@@ -10,7 +10,7 @@ const FooterOne = () => {
           <span className="ml-4 text-lg font-bold">Zootopia </span>
         </div>
         <div className="items-center hidden md:inline-flex">
-          <span className="text-sm font-medium text-black">
+          <span className="text-sm font-bold text-black">
             Ready to Get Started ?
           </span>
           <button
@@ -46,10 +46,10 @@ const FooterOne = () => {
         </div>
         <div className="grid grid-cols-2 gap-6 mt-8 md:mt-0 lg:w-3/4 lg:grid-cols-3">
           <div className="mb-8 lg:mb-0">
-            <p className="mb-6 text-lg font-semibold text-green-900">
+            <p className="mb-6 text-xl font-semibold text-green-900">
               information's
             </p>
-            <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
+            <ul className="flex flex-col space-y-4 text-base font-bold text-gray-500">
               <li>About us</li>
               <li>Company History</li>
               <li>Our Team</li>
@@ -58,10 +58,10 @@ const FooterOne = () => {
             </ul>
           </div>
           <div className="mb-8 lg:mb-0">
-            <p className="mb-6 text-lg font-semibold text-green-900">
+            <p className="mb-6 text-xl font-semibold text-green-900">
               Categories
             </p>
-            <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
+            <ul className="flex flex-col space-y-4 text-base font-bold text-gray-500">
               <li>Birthday party’s </li>
               <li>Animal interactions</li>
               <li>Feeding & petting</li>
@@ -71,12 +71,12 @@ const FooterOne = () => {
           </div>
           <div className="mb-8 lg:mb-0">
             <p className="mb-6 text-lg font-semibold text-green-900">Company</p>
-            <div className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
+            <ul className="flex flex-col space-y-4 text-base font-bold text-gray-500">
               <li>Our Story</li>
               <li>Our Team</li>
               <li>Our Vision</li>
               <li>Press Release</li>
-            </div>
+            </ul>
           </div>
         </div>
       </div>

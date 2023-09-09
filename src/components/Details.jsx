@@ -2,7 +2,7 @@ import React from "react";
 
 const Details = () => {
   return (
-    <section className="px-2 py-20  md:px-4 rounded-md bg-[#A2C579] shadow-2xl">
+    <section className="px-2 py-16  md:px-4 rounded-md bg-[#A2C579] shadow-2xl">
       <div className="max-w-4xl mx-auto ">
         <div className="flex flex-col items-center justify-center md:flex-row md:space-x-14">
           <div className="relative flex-shrink-0 w-48 h-72">
@@ -13,7 +13,7 @@ const Details = () => {
             />
           </div>
 
-          <div className="px-5 mt-4 md:mt-0">
+          <div className="px-3 mt-4 md:px-5 md:mt-0">
             <blockquote>
               <p className="h-full font-medium text-justify text-gray-500 font-ComicSans">
                 <span className="text-3xl font-bold text-black">"</span> Our

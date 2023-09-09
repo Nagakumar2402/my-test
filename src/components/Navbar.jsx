@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="inline-flex items-center space-x-2">
           <span>
             <img
-              className="h-20 transition-all duration-200 rounded-full shadow-xl cursor-pointer "
+              className="h-12 transition-all duration-200 rounded-full shadow-xl cursor-pointer md:h-16"
               src={icon}
               alt="Your Company"
             />

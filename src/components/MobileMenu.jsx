@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineClose, IoChevronForward } from "../assets/Icons/index";
 import menuItems from "../utils/menuItem";
 import icon from "../assets/images/logo.png";
-
+import { HashLink as Link } from "react-router-hash-link";
 const MobileMenu = ({ toggleMenu }) => {
   return (
     <div className="absolute inset-x-0 top-0 z-50 p-2 transition origin-top-right transform lg:hidden">
@@ -11,7 +11,11 @@ const MobileMenu = ({ toggleMenu }) => {
           <div className="flex items-center justify-between">
             <div className="inline-flex items-center space-x-2">
               <span>
-                <img className="w-auto h-20" src={icon} alt="Your Company" />
+                <img
+                  className="block w-auto h-12 transition-all duration-200 rounded-full shadow-xl cursor-pointer md:hidden"
+                  src={icon}
+                  alt="Your Company"
+                />
               </span>
             </div>
             <div className="-mr-2">
@@ -27,19 +31,18 @@ const MobileMenu = ({ toggleMenu }) => {
           </div>
           <div className="mt-6">
             <nav className="grid gap-y-4">
-              {menuItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="flex items-center p-3 -m-3 text-sm font-semibold rounded-md hover:bg-gray-50"
+              {menuItems?.map((item) => (
+                <Link
+                  key={item.id}
+                  smooth
+                  to={item.to}
+                  className="inline-flex items-center text-sm font-semibold tracking-widest transition-all duration-200 hover:text-green-700"
                 >
-                  <span className="ml-3 text-base font-medium text-gray-900">
-                    {item.name}
-                  </span>
-                  <span>
-                    <IoChevronForward className="w-4 h-4 ml-3" />
-                  </span>
-                </a>
+                  {item.name}
+                  {item.to === "/about" && (
+                    <IoChevronForward className="ml-1" />
+                  )}
+                </Link>
               ))}
             </nav>
           </div>

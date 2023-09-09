@@ -11,8 +11,8 @@ const HomePage = () => {
   return (
     <>
       <HeroBanner />
-      <Pricing />
       <Service />
+      <Pricing />
       <Location />
       <About />
       <Faq />

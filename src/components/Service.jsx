@@ -1,6 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import lists from "../utils/all";
 const Service = () => {
+  const [description, setDescription] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDescription(
+        window.innerWidth < 768
+          ? lists[0].description.slice(0, 65).concat("...")
+          : lists[0].description
+      );
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="mt-0 bg-[#FFFFDD]  ">
       <div
@@ -37,7 +57,7 @@ const Service = () => {
             <div className="absolute text-left bottom-4 left-4">
               <h1 className="text-lg font-semibold text-white">{list.name}</h1>
               <p className="mt-2 text-sm text-gray-300">
-                {window.innerWidth < 768
+                {window.innerWidth < 768 && list.description.length > 65
                   ? list.description.slice(0, 65).concat("...")
                   : list.description}
               </p>

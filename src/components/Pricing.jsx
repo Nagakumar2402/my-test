@@ -1,7 +1,7 @@
 import React from "react";
 import services from "../utils/service";
 
-export function Pricing() {
+const Pricing = () => {
   return (
     <div className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:pt-20 bg-[#FFFFDD]">
       <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-[#016A70] font-Oswald">
@@ -20,7 +20,9 @@ export function Pricing() {
                 {service.name}
               </h1>
               <p className="mt-3 text-sm text-gray-600">
-                {service.description}
+                {service.description.length > 65
+                  ? service.description.slice(0, 64) + "..."
+                  : service.description}
               </p>
               <h3 className="mt-3 text-base text-gray-700">
                 Price :
@@ -29,11 +31,19 @@ export function Pricing() {
                 </span>{" "}
                 Rs
               </h3>
-              <button
-                type="button"
-                className="mt-4 w-full rounded-sm bg-[#B4F698] px-2 py-1.5 text-xs border font-semibold text-black shadow-sm hover:bg-[#B4F698]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-              >
+
+              <button className=" mt-4 w-full text-sm px-4 py-3 group inline-flex items-center justify-center text-gray-700 bg-[#B4F698] hover:bg-[#B4F698]/90">
                 Add to Cart
+                <svg
+                  className="flex-shrink-0 w-4 h-4 ml-3 transition-transform duration-500 ease-in undefined group-hover:translate-x-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"></path>
+                </svg>
               </button>
             </div>
           </div>
@@ -41,4 +51,6 @@ export function Pricing() {
       </div>
     </div>
   );
-}
+};
+
+export default Pricing;

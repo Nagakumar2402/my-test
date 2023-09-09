@@ -2,8 +2,11 @@ import React from "react";
 import lists from "../utils/all";
 const Service = () => {
   return (
-    <div className="mt-0 bg-[#FFFFDD] md:mt-20 ">
-      <div className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:pt-20">
+    <div className="mt-0 bg-[#FFFFDD]  ">
+      <div
+        className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10"
+        id="top"
+      >
         <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-green-700 font-Oswald ">
           We have <br />
           many <span className="text-[#016A70]">Category Event</span>

@@ -1,19 +1,23 @@
 const menuItems = [
   {
+    id: 1,
     name: "Home",
-    href: "#",
+    to: "#home",
   },
   {
+    id: 2,
     name: "Locations",
-    href: "#",
+    to: "#location",
   },
   {
+    id: 3,
     name: "About",
-    href: "#",
+    to: "#about",
   },
   {
+    id: 4,
     name: "Contact",
-    href: "#",
+    to: "#contact",
   },
 ];
 

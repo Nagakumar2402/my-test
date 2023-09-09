@@ -4,7 +4,7 @@ const Details = () => {
   return (
     <section className="px-2 py-20  md:px-4 rounded-md bg-[#A2C579] shadow-2xl">
       <div className="max-w-4xl mx-auto ">
-        <div className="md:flex md:items-center md:justify-center md:space-x-14">
+        <div className="flex flex-col items-center justify-center md:flex-row md:space-x-14">
           <div className="relative flex-shrink-0 w-48 h-72">
             <img
               className="relative object-cover w-48 h-48 rounded-full"
@@ -13,7 +13,7 @@ const Details = () => {
             />
           </div>
 
-          <div className="mt-10 md:mt-0">
+          <div className="px-5 mt-4 md:mt-0">
             <blockquote>
               <p className="h-full font-medium text-justify text-gray-500 font-Oswald ">
                 <span className="text-3xl font-bold text-black">"</span> Our

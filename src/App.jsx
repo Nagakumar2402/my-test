@@ -1,26 +1,18 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import HeroBanner from "./components/HeroOne";
-
-import Service from "./components/Service";
-import About from "./components/About";
-import { Faq } from "./components/Fqa";
-import { Location } from "./components/Location";
-import { Pricing } from "./components/Pricing";
-import { FooterOne } from "./components/Footer";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
-    <div className="bg-[#FFFFFF]">
-      <Navbar />
-      <HeroBanner />
-      <Service />
-      <About />
-      <Pricing />
-      <Location />
-      <Faq />
-      <FooterOne />
-    </div>
+    <Router>
+      <div className="bg-[#FFFFDD]">
+        <Navbar />
+        <Routes>
+          <Route path="my-test/" element={<HomePage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

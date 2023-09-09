@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { IoChevronDown, IoChevronUp } from "../assets/Icons/index";
 import faq from "../utils/fqa";
-
-export const Faq = () => {
+const Faq = () => {
   const [expanded, setExpanded] = useState([]);
 
   const toggleFaq = (index) => {
@@ -50,7 +49,7 @@ export const Faq = () => {
           </div>
         ))}
       </div>
-      <p className="mt-6 text-center text-gray-600 textbase">
+      <p className="mt-6 text-base text-center text-gray-600">
         Can&apos;t find what you&apos;re looking for?{" "}
         <a
           href="#"
@@ -63,3 +62,5 @@ export const Faq = () => {
     </section>
   );
 };
+
+export default Faq;

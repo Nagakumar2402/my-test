@@ -10,14 +10,15 @@ import icon from "../assets/images/logo.png";
 import MobileMenu from "./MobileMenu";
 import menuItems from "../utils/menuItem";
 
+import { HashLink as Link } from "react-router-hash-link";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [show, setShow] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const [show, setShow] = useState();
 
   const NavbarVisibility = () => {
     if (window.scrollY > 100) {
@@ -53,16 +54,15 @@ const Navbar = () => {
         <div className="items-start hidden grow lg:flex ">
           <ul className="inline-flex ml-12 space-x-8 font-light ">
             {menuItems?.map((item) => (
-              <li key={item.name}>
-                <a
-                  href={item.href}
-                  className="inline-flex items-center text-sm font-semibold"
+              <li key={item.id}>
+                <Link
+                  smooth
+                  to={item.to}
+                  className="inline-flex items-center text-sm font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-700"
                 >
                   {item.name}
-                  <span>
-                    <IoChevronDown className="w-4 h-4 ml-2" />
-                  </span>
-                </a>
+                  {item.to === "/about" && <IoChevronDown className="ml-1" />}
+                </Link>
               </li>
             ))}
           </ul>

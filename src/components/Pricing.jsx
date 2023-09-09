@@ -4,7 +4,7 @@ import services from "../utils/service";
 const Pricing = () => {
   return (
     <div className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:pt-20 bg-[#FFFFDD]">
-      <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-[#016A70] font-Oswald">
+      <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-[#016A70] font-ComicSans">
         Zootopia Ticket Price
       </h1>
       <div className="grid items-center w-full px-2 py-10 mx-auto space-y-4 max-w-7xl md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">

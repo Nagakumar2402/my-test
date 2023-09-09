@@ -15,7 +15,7 @@ const Details = () => {
 
           <div className="px-5 mt-4 md:mt-0">
             <blockquote>
-              <p className="h-full font-medium text-justify text-gray-500 font-Oswald ">
+              <p className="h-full font-medium text-justify text-gray-500 font-ComicSans">
                 <span className="text-3xl font-bold text-black">"</span> Our
                 featured individual is a true advocate for work-life balance,
                 excelling as a homemaker and devoted mother of two. In her

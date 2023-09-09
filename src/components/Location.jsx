@@ -47,7 +47,7 @@ const Location = () => {
                 <p className="mb-6 font-medium leading-relaxed text-gray-600">
                   Timings:
                 </p>
-                <ul className="mb-11">
+                <ul className="text-xl mb-11 font-ComicSans">
                   <li className="flex items-center mb-4">
                     <CheckCircle className="mr-2" size={16} />
                     <p className="font-semibold leading-normal">

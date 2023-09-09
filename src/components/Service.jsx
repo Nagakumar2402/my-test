@@ -7,11 +7,11 @@ const Service = () => {
         className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10"
         id="top"
       >
-        <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-green-700 font-Oswald ">
+        <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-green-700 font-ComicSans ">
           We have <br />
           many <span className="text-[#016A70]">Category Event</span>
         </h1>
-        <p className="py-5  leading-10 font-Syne font-semibold tracking-wide text-gray-500 w-[90%] text-base ">
+        <p className="py-5  leading-10 font-ComicSans font-semibold tracking-wide text-gray-500 w-[90%] text-base ">
           <span className="font-extrabold font-Oswald">
             At Zootopia - The Funyard
           </span>
@@ -36,7 +36,11 @@ const Service = () => {
             <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
             <div className="absolute text-left bottom-4 left-4">
               <h1 className="text-lg font-semibold text-white">{list.name}</h1>
-              <p className="mt-2 text-sm text-gray-300">{list.description}</p>
+              <p className="mt-2 text-sm text-gray-300">
+                {window.innerWidth < 768
+                  ? list.description.slice(0, 65).concat("...")
+                  : list.description}
+              </p>
               <button className="inline-flex items-center mt-2 text-sm font-semibold text-white cursor-pointer">
                 More &rarr;
               </button>

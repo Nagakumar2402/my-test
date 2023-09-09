@@ -11,11 +11,11 @@ const HomePage = () => {
   return (
     <>
       <HeroBanner />
+      <Pricing />
       <Service />
+      <Location />
       <About />
       <Faq />
-      <Location />
-      <Pricing />
       <FooterOne />
     </>
   );

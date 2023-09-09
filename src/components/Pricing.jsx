@@ -20,9 +20,7 @@ const Pricing = () => {
                 {service.name}
               </h1>
               <p className="mt-3 text-sm text-gray-600">
-                {service.description.length > 65
-                  ? service.description.slice(0, 64) + "..."
-                  : service.description}
+                {service.description.slice(0, 32) + "..."}
               </p>
               <h3 className="mt-3 text-base text-gray-700">
                 Price :

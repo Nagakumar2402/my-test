@@ -61,7 +61,7 @@ const Service = () => {
                   ? list.description.slice(0, 65).concat("...")
                   : list.description}
               </p>
-              <button className="inline-flex items-center mt-2 text-sm font-semibold text-white cursor-pointer">
+              <button className="inline-flex items-center justify-end w-full px-4 py-3 mt-2 text-sm font-semibold text-white cursor-pointer">
                 More &rarr;
               </button>
             </div>

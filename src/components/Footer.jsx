@@ -3,7 +3,7 @@ import React from "react";
 import icon from "../assets/images/logo.png";
 const FooterOne = () => {
   return (
-    <footer className="w-full py-10 bg-[#D8D9DA]" id="contact">
+    <footer className="w-full py-10 ">
       <div className="flex items-center justify-between max-w-6xl px-4 py-2 mx-auto lg:px-0">
         <div className="inline-flex items-center">
           <img src={icon} alt="" className="w-auto h-20" />

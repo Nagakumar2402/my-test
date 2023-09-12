@@ -13,8 +13,6 @@ const HomePage = () => {
       <HeroBanner />
       <Service />
       <Pricing />
-      <Location />
-      <About />
       <Faq />
       <FooterOne />
     </>

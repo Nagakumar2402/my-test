@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage";
 const App = () => {
   return (
     <Router>
-      <div className="bg-[#FFFFDD]">
+      <div>
         <Navbar />
         <Routes>
           <Route path="my-test/" element={<HomePage />} />

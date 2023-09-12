@@ -22,7 +22,7 @@ const Service = () => {
   }, []);
 
   return (
-    <div className="mt-0 bg-[#FFFFDD]  ">
+    <div className="pt-28 md:pt-5">
       <div
         className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10"
         id="top"
@@ -31,7 +31,7 @@ const Service = () => {
           We have <br />
           many <span className="text-[#016A70]">Category Event</span>
         </h1>
-        <p className="py-5  leading-10 font-ComicSans font-semibold tracking-wide text-gray-500 w-[90%] text-base ">
+        <p className="py-5  leading-10 font-ComicSans font-semibold tracking-wide text-gray-500  lg:w-[60%] text-base ">
           <span className="font-extrabold font-Oswald">
             At Zootopia - The Funyard
           </span>
@@ -54,14 +54,9 @@ const Service = () => {
               className="z-0 object-cover w-full h-full rounded-md"
             />
             <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
-            <div className="absolute text-left bottom-4 left-4">
-              <h1 className="text-lg font-semibold text-white">{list.name}</h1>
-              <p className="mt-2 text-sm text-gray-300">
-                {window.innerWidth < 768 && list.description.length > 65
-                  ? list.description.slice(0, 65).concat("...")
-                  : list.description}
-              </p>
-              <button className="inline-flex items-center justify-end w-full px-4 py-3 mt-2 text-sm font-semibold text-white cursor-pointer">
+            <div className="absolute bottom-4 left-4">
+              <h1 className="text-xl font-semibold text-white ">{list.name}</h1>
+              <button className="flex py-3 mt-4 text-sm font-semibold text-white cursor-pointer md:pl-48 text-end">
                 More &rarr;
               </button>
             </div>

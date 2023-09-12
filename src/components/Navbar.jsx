@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
-import {
-  AiOutlineMenu,
-  IoChevronDown,
-  BiSearch,
-  BiCartAlt,
-  FaUserAlt,
-} from "../assets/Icons/index";
+import { AiOutlineMenu, IoChevronDown } from "../assets/Icons/index";
 import icon from "../assets/images/logo.png";
+
 import MobileMenu from "./MobileMenu";
 import menuItems from "../utils/menuItem";
 
@@ -37,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 font-poppins  z-50 w-full shadow-lg hover:bg-white transition-all duration-200  hover:text-black bg-[#0a0a0a33] ${
+      className={`fixed top-0 left-0   z-50 w-full shadow-lg hover:bg-white transition-all duration-200  hover:text-black bg-[#0a0a0a33] ${
         show ? "bg-white text-black !important" : "text-white"
       }   capitalize`}
     >
@@ -45,7 +40,7 @@ const Navbar = () => {
         <div className="inline-flex items-center space-x-2">
           <span>
             <img
-              className="h-12 transition-all duration-200 rounded-full shadow-xl cursor-pointer md:h-16"
+              className="h-12 transition-all duration-200 rounded-full cursor-pointer md:h-20"
               src={icon}
               alt="Your Company"
             />
@@ -58,7 +53,7 @@ const Navbar = () => {
                 <Link
                   smooth
                   to={item.to}
-                  className="inline-flex items-center text-sm font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-700"
+                  className="inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-700"
                 >
                   {item.name}
                   {item.to === "/about" && <IoChevronDown className="ml-1" />}
@@ -67,11 +62,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="items-center hidden gap-6 space-x-2 lg:flex hover:cursor-pointer ">
-          <BiSearch className="w-5 h-5 text-bold " />
-          <FaUserAlt className="w-4 h-4 text-bold " />
-          <BiCartAlt className="w-5 h-5 text-bold " />
-        </div>
+
         <div className="lg:hidden">
           <AiOutlineMenu
             onClick={toggleMenu}

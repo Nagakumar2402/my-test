@@ -4,8 +4,8 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import one from "../assets/images/one.png";
-import { BiArrowBack } from "react-icons/bi";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { BiCheckCircle } from "react-icons/bi";
 const HeroBanner = () => {
   return (
     <div className="relative  text-white text-[20px] w-full  mx-auto" id="home">
@@ -33,35 +33,15 @@ const HeroBanner = () => {
         )}
       >
         <div className="w-full overflow-hidden font-Oswald">
-          <div className="relative shadow-xl overflow-hidden border-double border-2 border-[#86b979] ">
+          <div className="relative overflow-hidden ">
             <img
               src={one}
               className="aspect-[16/10] md:aspect-auto object-cover  "
             />
-
-            <div className="container absolute z-10 flex flex-col items-center w-4/5 md:py-16 mx-auto my-10 transform -translate-x-1/2 -translate-y-1/2  top-1/2 left-1/2 md:left-[60%] md:my-32">
-              <p className="flex flex-col items-center text-4xl font-extrabold text-center text-transparent text-stroke-3 md:text-6xl lg:text-8xl">
-                Zootopia - The Funyard
-              </p>
-
-              <button className="inline-flex items-center px-4 py-3 mt-5 text-sm text-white bg-gray-900 md:mt-10 group hover:bg-gray-700/90">
-                Get Started
-                <svg
-                  className="flex-shrink-0 w-4 h-4 ml-3 transition-transform duration-500 ease-in fill-white undefined group-hover:translate-x-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"></path>
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
         <div className="w-full overflow-hidden font-Oswald ">
-          <div className="relative overflow-hidden border-2 border-green-500 border-double shadow-2xl ">
+          <div className="relative overflow-hidden ">
             <img
               src={one}
               className="aspect-[16/10] md:aspect-auto object-cover  "
@@ -69,6 +49,27 @@ const HeroBanner = () => {
           </div>
         </div>
       </Carousel>
+      <div className="absolute z-1 md:w-[30%] h-48 green-top right-0  md:-bottom-32 border-2 md:right-64 rounded-2xl">
+        <div className="pt-8 px-9 pb-9">
+          <p className="mb-2 font-bold leading-relaxed text-gray-900 border-b-2">
+            Timings:
+          </p>
+          <ul className="text-lg text-end text-[#484646] mb-11 font-ComicSans">
+            <li className="flex items-center ">
+              <BiCheckCircle className="mr-2" size={16} />
+              <p className="font-semibold leading-normal">10 am - 01 pm</p>
+            </li>
+            <li className="flex items-center ">
+              <BiCheckCircle className="mr-2" size={16} />
+              <p className="font-semibold leading-normal">2 pm - 5 pm</p>
+            </li>
+            <li className="flex items-center ">
+              <BiCheckCircle className="mr-2" size={16} />
+              <p className="font-semibold leading-normal">4 pm -7 pm</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import Location from "./components/Location";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import PopEvent from "./components/Popevent";
+import PopEvent from "./components/PopUPEvent";
 
 const App = () => {
   const location = useLocation()

@@ -1,37 +1,20 @@
 import React, { useState, useEffect } from "react";
 import lists from "../utils/all";
-const Service = () => {
-  const [description, setDescription] = useState("");
+import { Link } from "react-router-dom";
+const Events = () => {
 
-  useEffect(() => {
-    const handleResize = () => {
-      setDescription(
-        window.innerWidth < 768
-          ? lists[0].description.slice(0, 65).concat("...")
-          : lists[0].description
-      );
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+console.log(lists)
   return (
     <div className="pt-28 md:pt-5">
       <div
-        className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10"
+        className="w-full px-10 py-5 mx-auto space-y-4 font-bold max-w-7xl lg:px-20 lg:py-10"
         id="top"
       >
         <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-green-700 font-ComicSans ">
           We have <br />
           many <span className="text-[#016A70]">Category Event</span>
         </h1>
-        <p className="py-5  leading-10 font-ComicSans font-semibold tracking-wide text-gray-500  lg:w-[60%] text-base ">
+        <p className="py-5  leading-10 font-ComicSans font-semibold tracking-wide text-gray-500  lg:w-[44%] text-justify text-base ">
           <span className="font-extrabold font-Oswald">
             At Zootopia - The Funyard
           </span>
@@ -42,14 +25,16 @@ const Service = () => {
           that's perfect for all animal enthusiasts.
         </p>
       </div>
-      <div className="grid items-center w-full max-w-full px-10 py-10 mx-auto space-y-4 lg:px-20 lg:py-20 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+      <div className="grid items-center w-full px-10 py-10 mx-auto space-y-4 max-w-7xl lg:px-20 lg:py-20 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
         {lists.map((list) => (
-          <div
+          <Link
+          to={`/my-test/${list.id}`}
             key={list.id}
+            
             className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px]"
           >
             <img
-              src={list.Image}
+              src={list.image}
               alt={list.name}
               className="z-0 object-cover w-full h-full rounded-md"
             />
@@ -60,11 +45,12 @@ const Service = () => {
                 More &rarr;
               </button>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
+      
     </div>
   );
 };
 
-export default Service;
+export default Events;

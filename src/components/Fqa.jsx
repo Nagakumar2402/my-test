@@ -11,7 +11,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="max-w-full px-2 py-20 mx-auto md:px-0 bg-[#F0F0F0]">
+    <section className="max-w-7xl px-2 py-20 mx-auto md:px-0 bg-[#F0F0F0]   ">
       <div className="max-w-2xl mx-auto lg:text-center">
         <h2 className="text-3xl font-bold text-gray-700 sm:text-4xl lg:text-5xl">
           Frequently Asked Questions

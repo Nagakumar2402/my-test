@@ -4,8 +4,7 @@ import icon from "../assets/images/logo.png";
 
 import MobileMenu from "./MobileMenu";
 import menuItems from "../utils/menuItem";
-
-import { HashLink as Link } from "react-router-hash-link";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,25 +38,22 @@ const Navbar = () => {
       <div className="flex items-center justify-between max-w-full px-4 py-2 mx-auto sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
-            <img
-              className="h-12 transition-all duration-200 rounded-full cursor-pointer md:h-20"
-              src={icon}
-              alt="Your Company"
-            />
+            <Link to={"my-test/"}>
+              <img src={icon} alt="" className="w-auto h-20" />
+            </Link>
           </span>
         </div>
         <div className="items-start hidden grow lg:flex ">
           <ul className="inline-flex ml-12 space-x-8 font-light ">
             {menuItems?.map((item) => (
               <li key={item.id}>
-                <Link
-                  smooth
+                <NavLink
                   to={item.to}
                   className="inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-700"
                 >
                   {item.name}
-                  {item.to === "/about" && <IoChevronDown className="ml-1" />}
-                </Link>
+                  <IoChevronDown className="ml-1" />
+                </NavLink>
               </li>
             ))}
           </ul>

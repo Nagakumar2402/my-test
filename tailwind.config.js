@@ -4,11 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        Syne: ["Syne", "sans-serif"],
-        Oswald: ["Oswald", "sans-serif"],
-        WorkSans: ["Work Sans", "sans-serif"],
+    
         ComicSans: ["Comic Sans MS", "sans-serif"],
+      
       },
     },
   },

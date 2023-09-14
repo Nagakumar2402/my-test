@@ -3,8 +3,6 @@ import lists from "../utils/all";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 const Events = () => {
-  const [isPopupOpen, setPopupOpen] = useState(false);
-
   const showSweetAlert = (imageUrl) => {
     Swal.fire({
       imageUrl: imageUrl,
@@ -21,9 +19,9 @@ const Events = () => {
   };
 
   return (
-    <div className="pt-10 md:pt-5">
+    <div className="pt-14 md:pt-5">
       <div
-        className="w-full px-10 py-5 mx-auto space-y-4 font-bold max-w-7xl lg:px-20 lg:py-10"
+        className="w-full px-10 py-5 mx-auto space-y-4 font-bold max-w-[1366px] lg:px-20 lg:py-10"
         id="top"
       >
         <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-green-700 font-ComicSans ">
@@ -41,7 +39,7 @@ const Events = () => {
           that's perfect for all animal enthusiasts.
         </p>
       </div>
-      <div className="grid items-center w-full px-10 py-10 mx-auto space-y-4 max-w-7xl lg:px-20 lg:py-20 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+      <div className="grid items-center w-full px-10 py-10 mx-auto space-y-4 max-w-[1366px] lg:px-20 lg:py-20 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
         {lists.map((list) => (
           <div
             key={list.id}

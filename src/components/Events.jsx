@@ -5,22 +5,16 @@ import Swal from "sweetalert2";
 const Events = () => {
   const showSweetAlert = (imageUrl) => {
     Swal.fire({
-      showClass: {
-        popup: "animate__animated animate__fadeInDown",
-      },
       imageUrl: imageUrl,
-
-      imageHeight: 630,
-      imageWidth: 1000,
+      imageHeight: 680,
       imageAlt: "A tall image",
-      backdrop: true,
-      backgroundColor: "rgba(0,0,0,0.5) rgba(0, 0, 0, 0.808) ",
-      padding: "0px",
-      margin: "0",
+      backdrop: `rgba(0,0,0,0.9)`,
+      background: " rgba(0, 0, 0, 0.2) ",
       confirmButtonColor: "green",
-
-      hideClass: {
-        popup: "animate__animated animate__fadeOutUp",
+      confirmButtonText: "Back",
+      boxShadow: "rgba(0, 0, 0, 0.4) 0px 30px 90px",
+      customClass: {
+        confirmButton: "btn",
       },
     });
   };

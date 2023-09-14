@@ -14,6 +14,9 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const hideMenu = () => {
+    setIsMenuOpen(false);
+  };
   const NavbarVisibility = () => {
     if (window.scrollY > 100) {
       setShow(true);
@@ -65,7 +68,9 @@ const Navbar = () => {
             className="w-6 h-6 cursor-pointer"
           />
         </div>
-        {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}
+        {isMenuOpen && (
+          <MobileMenu toggleMenu={toggleMenu} hideMenu={hideMenu} />
+        )}
       </div>
     </div>
   );

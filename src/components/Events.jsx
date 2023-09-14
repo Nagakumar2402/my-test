@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import lists from "../utils/all";
-import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 const Events = () => {
   const showSweetAlert = (imageUrl) => {
@@ -19,7 +18,7 @@ const Events = () => {
   };
 
   return (
-    <div className="pt-14 md:pt-5">
+    <div className="pt-16 md:pt-5">
       <div
         className="w-full px-10 py-5 mx-auto space-y-4 font-bold max-w-[1366px] lg:px-20 lg:py-10"
         id="top"

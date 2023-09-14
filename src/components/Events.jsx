@@ -3,22 +3,18 @@ import lists from "../utils/all";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 const Events = () => {
-  const showSweetAlert = (imageUrl) => {
+const showSweetAlert = (imageUrl) => {
     Swal.fire({
       imageUrl: imageUrl,
-      imageHeight: 680,
+      imageHeight: 700,
       imageAlt: "A tall image",
       backdrop: `rgba(0,0,0,0.9)`,
       background: " rgba(0, 0, 0, 0.2) ",
-      confirmButtonColor: "green",
-      confirmButtonText: "Back",
       boxShadow: "rgba(0, 0, 0, 0.4) 0px 30px 90px",
-      customClass: {
-        confirmButton: "btn",
-      },
+      showConfirmButton: false,
+      
     });
   };
-
   return (
     <div className="pt-28 md:pt-5">
       <div

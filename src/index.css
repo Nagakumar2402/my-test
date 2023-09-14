@@ -108,3 +108,22 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+.btn{
+
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 8px 40px;
+  border-radius: 10px;
+  margin: -20px;
+  cursor: pointer;
+  outline: none;
+  transform: scale(1);
+transition: all 0.3s ease-in-out;
+  
+}
+.btn:hover{
+transform: scaleX(1.1);
+
+}

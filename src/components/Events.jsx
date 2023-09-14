@@ -3,16 +3,15 @@ import lists from "../utils/all";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 const Events = () => {
-const showSweetAlert = (imageUrl) => {
+  const showSweetAlert = (imageUrl) => {
     Swal.fire({
       imageUrl: imageUrl,
-      imageHeight: 700,
+      imageHeight: 600,
+      imageWidth: 500,
       imageAlt: "A tall image",
-      backdrop: `rgba(0,0,0,0.9)`,
+      backdrop: `rgba(0,0,0,0.4)`,
       background: " rgba(0, 0, 0, 0.2) ",
-      boxShadow: "rgba(0, 0, 0, 0.4) 0px 30px 90px",
       showConfirmButton: false,
-      
     });
   };
   return (

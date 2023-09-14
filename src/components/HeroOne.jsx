@@ -6,7 +6,7 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { IoTimerOutline } from "react-icons/io5";
 const HeroBanner = () => {
   return (
-    <div className="relative  text-white text-[20px] w-full  mx-auto" >
+    <div className="relative  text-white text-[20px] w-full  mx-auto">
       <Carousel
         autoPlay={true}
         infiniteLoop={true}
@@ -47,23 +47,38 @@ const HeroBanner = () => {
           </div>
         </div>
       </Carousel>
-      <div className="absolute z-1 w-full md:w-[300px] flex items-center justify-center h-32 md:h-48 green-top right-0 -bottom-20 md:-bottom-32 border-2 md:right-36 rounded-2xl">
-        <div className="pt-8 px-9 pb-9">
-          <p className="mb-2 font-bold leading-relaxed text-gray-900 border-b-2 border-gray-200">
+      <div className="absolute z-1 w-[200px] md:w-[300px] flex items-center justify-center h-28 md:h-48 green-top right-0 -bottom-20 md:-bottom-32 border-2 md:right-36 rounded-2xl">
+        <div className="py-8 px-9">
+          <p className="font-bold leading-relaxed text-gray-900 border-b-2 border-gray-200 md:mb-2">
             Timings:
           </p>
           <ul className="md:text-lg text-[#484646] md:m-5 font-ComicSans">
             <li className="flex items-center">
-              <IoTimerOutline className="mr-2 text-base font-bold md:text-xl" size={16} />
-              <p className="font-semibold leading-normal">10 am - 01 pm</p>
+              <IoTimerOutline
+                className="text-base font-bold md:mr-2 md:text-xl"
+                size={16}
+              />
+              <p className="text-sm font-semibold leading-normal md:text-xl ">
+                10 am - 01 pm
+              </p>
             </li>
             <li className="flex items-center">
-              <IoTimerOutline className="mr-2 text-base font-bold md:text-xl" size={16} />
-              <p className="font-semibold leading-normal">2 pm - 5 pm</p>
+              <IoTimerOutline
+                className="text-base font-bold md:mr-2 md:text-xl"
+                size={16}
+              />
+              <p className="text-sm font-semibold leading-normal md:text-xl">
+                2 pm - 5 pm
+              </p>
             </li>
             <li className="flex items-center">
-              <IoTimerOutline className="mr-2 text-base font-bold md:text-xl" size={16} />
-              <p className="font-semibold leading-normal">4 pm -7 pm</p>
+              <IoTimerOutline
+                className="text-base font-bold md:mr-2 md:text-xl"
+                size={16}
+              />
+              <p className="text-sm font-semibold leading-normal md:text-xl">
+                4 pm -7 pm
+              </p>
             </li>
           </ul>
         </div>

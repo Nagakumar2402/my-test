@@ -3,19 +3,25 @@ import lists from "../utils/all";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 const Events = () => {
+  const [isPopupOpen, setPopupOpen] = useState(false);
+
   const showSweetAlert = (imageUrl) => {
     Swal.fire({
       imageUrl: imageUrl,
-      imageHeight: 600,
-      imageWidth: 500,
+      imageHeight: 660,
+      showCloseButton: true,
       imageAlt: "A tall image",
       backdrop: `rgba(0,0,0,0.4)`,
       background: " rgba(0, 0, 0, 0.2) ",
       showConfirmButton: false,
+      customClass: {
+        closeButton: "custom-swal-close-button",
+      },
     });
   };
+
   return (
-    <div className="pt-28 md:pt-5">
+    <div className="pt-10 md:pt-5">
       <div
         className="w-full px-10 py-5 mx-auto space-y-4 font-bold max-w-7xl lg:px-20 lg:py-10"
         id="top"
@@ -39,18 +45,18 @@ const Events = () => {
         {lists.map((list) => (
           <div
             key={list.id}
-            className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[400px] cursor-pointer"
+            className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[350px]  cursor-pointer"
             onClick={() => showSweetAlert(list.image)}
           >
             <img
               src={list.image}
               alt={list.name}
-              className="z-0 object-cover w-full h-full rounded-md responsive-image "
+              className="z-0 object-cover w-full rounded-md responsive-image  md:h-[350px] max-w-full h-auto"
             />
             <div className="absolute inset-0 rounded-md bg-gradient-to-t from-gray-900 to-transparent"></div>
             <div className="absolute bottom-4 left-4">
               <h1 className="text-xl font-semibold text-white ">{list.name}</h1>
-              <button className="flex py-3 mt-4 text-sm font-semibold text-white cursor-pointer md:pl-40 text-end">
+              <button className="flex py-3 mt-4 text-sm font-semibold text-white cursor-pointer text-end">
                 More &rarr;
               </button>
             </div>

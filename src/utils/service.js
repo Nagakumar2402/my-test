@@ -4,7 +4,6 @@ import art from "../assets/images/ARTANDCRAFT.svg";
 import tattoo from "../assets/images/tatto.svg";
 import stone from "../assets/images/stoneArt.svg";
 import game from "../assets/images/game.svg";
-import potter from "../assets/images/pottery.png";
 
 const services = [
   {

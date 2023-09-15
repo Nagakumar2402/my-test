@@ -1,21 +1,22 @@
 import React from "react";
 import services from "../utils/service";
-
+import { Carousel } from "@trendyol-js/react-carousel";
 const Pricing = () => {
   return (
     <div className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:pt-20 ">
       <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-[#016A70] font-ComicSans">
         Zootopia Ticket Price
       </h1>
+
       <div className="grid items-center w-full max-w-full px-2 py-10 mx-auto space-y-4 md:grid-cols-2 md:gap-10 md:space-y-0 lg:grid-cols-3">
         {services.map((service, i) => (
           <div key={i} className="overflow-hidden ">
             <img
               src={service.image}
               alt={service.name}
-              className="aspect-[16/9] w-full shadow-xl rounded-md md:aspect-auto md:h-[250px] lg:h-[330px] hover:scale-105 cursor-pointer transition-all duration-200"
+              className="aspect-[16/9] w-full rounded-md md:aspect-auto md:h-[250px] lg:h-[320px] hover:scale-105 cursor-pointer transition-all duration-200"
             />
-            <div className="p-4">
+            <div className="flex flex-col items-center justify-center p-4">
               <h1 className="inline-flex items-center text-lg font-semibold">
                 {service.name}
               </h1>

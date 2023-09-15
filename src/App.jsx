@@ -9,7 +9,7 @@ import About from "./pages/About";
 const App = () => {
   const location = useLocation();
   return (
-    <div>
+    <div className=" max-w-screen">
       <Navbar />
       <Routes location={location} key={location.pathname}>
         <Route path="my-test/" element={<HomePage />} />

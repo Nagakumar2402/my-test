@@ -4,8 +4,7 @@ import art from "../assets/images/ARTANDCRAFT.svg";
 import tattoo from "../assets/images/tatto.svg";
 import stone from "../assets/images/stoneArt.svg";
 import game from "../assets/images/game.svg";
-
-
+import potter from "../assets/images/pottery.png";
 
 const services = [
   {
@@ -20,7 +19,7 @@ const services = [
     price: 3500,
     description:
       "Learn the mesmerizing art of creating intricate bubble rings.",
-    image: bubble,   
+    image: bubble,
   },
   {
     name: "Art and Craft",
@@ -34,20 +33,20 @@ const services = [
     price: 1500,
     description:
       "Get inked by our talented tattoo artists with custom designs.",
-    image:tattoo,
+    image: tattoo,
   },
   {
     name: "Stone Art",
     price: 3000,
     description: "Create stunning art pieces using various types of stones.",
-    image:stone
+    image: stone,
   },
   {
     name: "Game Coordinator",
     price: 2500,
     description:
       "Enjoy fun and interactive games organized by our game coordinators.",
-    image:game
+    image: game,
   },
 ];
 

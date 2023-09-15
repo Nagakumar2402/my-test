@@ -449,6 +449,11 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.8.0.tgz#e848d2f669f601544df15ce2a313955e4bf0bafc"
   integrity sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg==
 
+"@trendyol-js/react-carousel@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@trendyol-js/react-carousel/-/react-carousel-3.0.2.tgz#2b64f8edd69b2dfbba79d0ecceec7b3949ed86f4"
+  integrity sha512-V/Z7N2CXEBCNWwJfOGeE9MNfAvWj/eK/KIwoautb8mp/g9pc4ZHCIuRkmH4viUxJiv8f+WTCuPR2HBzZv8+p1w==
+
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"

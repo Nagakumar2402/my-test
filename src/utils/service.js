@@ -5,7 +5,7 @@ import tattoo from "../assets/images/tatto.svg";
 import stone from "../assets/images/stoneArt.svg";
 import game from "../assets/images/game.svg";
 
-const services = [
+const services1 = [
   {
     name: "Pottery",
     price: 2500,
@@ -27,6 +27,11 @@ const services = [
       "Unleash your creativity with a wide range of art and craft activities.",
     image: art,
   },
+  
+];
+
+const services2 = [
+
   {
     name: "Tattoo Artist",
     price: 1500,
@@ -49,4 +54,5 @@ const services = [
   },
 ];
 
-export default services;
+export { services1, services2 };
+

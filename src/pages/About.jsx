@@ -3,7 +3,7 @@ import monkey from "../assets/images/monkey.png";
 
 const About = () => {
   return (
-    <div className="relative w-screen h-screen mx-auto ">
+    <div className="relative w-screen mx-auto text-gray-100 bg-gray-800 md:h-screen">
       <div className="w-full px-10 py-20 mx-auto space-y-4 font-bold md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 lg:px-20 lg:py-20">
         <h1 className="text-4xl pt-14   font-extrabold leading-[50px] tracking-widest text-[#016A70] font-ComicSans ">
           About Us
@@ -22,7 +22,7 @@ const About = () => {
 
               <div className="px-3 mt-4 md:px-5 md:mt-0">
                 <blockquote>
-                  <p className="h-full font-medium text-justify text-gray-500 font-ComicSans">
+                  <p className="h-full font-medium text-justify font-ComicSans">
                     <span className="text-3xl font-bold text-black">"</span> Our
                     featured individual is a true advocate for work-life
                     balance, excelling as a homemaker and devoted mother of two.
@@ -43,20 +43,14 @@ const About = () => {
                     </span>
                   </p>
                 </blockquote>
-                <p className="text-xl font-semibold text-black mt-7">
-                  Madhulika Singh
-                </p>
-                <p className="mt-1 text-base text-gray-500">
+                <p className="text-xl font-semibold mt-7">Madhulika Singh</p>
+                <p className="mt-1 text-base ">
                   Managing Director - Zootopia - The Funyard
                 </p>
               </div>
             </div>
           </div>
         </section>
-
-        <div className="fixed hidden top-20 -z-10 -right-28 md:block">
-          <img src={monkey} alt="monkey" />
-        </div>
       </div>
     </div>
   );

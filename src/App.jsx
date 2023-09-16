@@ -7,11 +7,9 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import icon from "./assets/images/whatsApp.jpeg";
-
-
+import mp3 from "./assets/whatsapp-notification.mp3";
 
 const App = () => {
-  const [isWhatsappOpen, setIsWhatsappOpen] = React.useState(true);
   const location = useLocation();
   return (
     <div className=" max-w-screen">
@@ -22,20 +20,16 @@ const App = () => {
         <Route path="my-test/location" element={<Location />} />
         <Route path="my-test/contact" element={<Contact />} />
       </Routes>
-      {
-        isWhatsappOpen && <FloatingWhatsApp
+
+      <FloatingWhatsApp
         phoneNumber="9032161244"
         accountName="Zootopia - The Funyard"
         allowEsc
         allowClickAway
         notification
-        notificationSound
+        notificationSoundSrc={mp3}
         avatar={icon}
-        onSubmit={() => setIsWhatsappOpen(false)}
-        
-        />
-      }
-     
+      />
     </div>
   );
 };

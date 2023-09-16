@@ -4,11 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-    
         ComicSans: ["Comic Sans MS", "sans-serif"],
-      
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

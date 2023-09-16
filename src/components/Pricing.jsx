@@ -14,7 +14,7 @@ const Pricing = () => {
             <img
               src={service.image}
               alt={service.name}
-              className="aspect-[16/9] w-full rounded-md md:aspect-auto md:h-[250px] lg:h-[320px] hover:scale-105 cursor-pointer transition-all duration-200"
+              className="aspect-[16/9] w-full md:aspect-auto md:h-[250px] lg:h-[320px] scale-105 rounded-md object-cover hover:scale-110 cursor-pointer transition-all duration-200"
             />
             <div className="flex flex-col items-center justify-center p-4">
               <h1 className="inline-flex items-center text-lg font-semibold">
@@ -47,7 +47,7 @@ const Pricing = () => {
             <img
               src={service.image}
               alt={service.name}
-              className="aspect-[16/9] w-full rounded-md md:aspect-auto md:h-[250px] lg:h-[320px] hover:scale-105 cursor-pointer transition-all duration-200"
+              className="aspect-[16/9] w-full md:aspect-auto md:h-[250px] lg:h-[320px] scale-105 rounded-md object-cover hover:scale-110 cursor-pointer transition-all duration-200"
             />
             <div className="flex flex-col items-center justify-center p-4">
               <h1 className="inline-flex items-center text-lg font-semibold">

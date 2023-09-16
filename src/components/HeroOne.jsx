@@ -2,7 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import one from "../assets/images/one.png";
-import CS from "../assets/images/CS.svg";
+import CS from "../assets/images/c-1.png";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { IoTimerOutline } from "react-icons/io5";
 const HeroBanner = () => {

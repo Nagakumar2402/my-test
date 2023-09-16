@@ -1,9 +1,9 @@
-import pottery from "../assets/images/POTTY.svg";
+import pottery from "../assets/images/pottery.png";
 import bubble from "../assets/images/bubbleArt.svg";
-import art from "../assets/images/ARTANDCRAFT.svg";
-import tattoo from "../assets/images/tatto.svg";
-import stone from "../assets/images/stoneArt.svg";
-import game from "../assets/images/game.svg";
+import art from "../assets/images/artandcraftt.png";
+import tattoo from "../assets/images/tattao.png";
+import stone from "../assets/images/painting.png";
+import game from "../assets/images/game.png";
 
 const services1 = [
   {
@@ -27,11 +27,9 @@ const services1 = [
       "Unleash your creativity with a wide range of art and craft activities.",
     image: art,
   },
-  
 ];
 
 const services2 = [
-
   {
     name: "Tattoo Artist",
     price: 1500,
@@ -55,4 +53,3 @@ const services2 = [
 ];
 
 export { services1, services2 };
-

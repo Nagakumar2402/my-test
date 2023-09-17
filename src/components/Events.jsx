@@ -20,7 +20,7 @@ const Events = () => {
   return (
     <div className="pt-16 max-w-screen md:pt-5">
       <div
-        className="w-full px-10 py-5 mx-auto space-y-4 font-bold max-w-full lg:px-20 lg:py-10"
+        className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10"
         id="top"
       >
         <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-green-700 font-ComicSans ">
@@ -42,7 +42,7 @@ const Events = () => {
         {lists.map((list) => (
           <div
             key={list.id}
-            className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[350px]  cursor-pointer"
+            className="relative aspect-[16/9]  w-auto rounded-md md:aspect-auto md:h-[350px] object-contain  cursor-pointer"
             onClick={() => showSweetAlert(list.image)}
           >
             <img

@@ -1,5 +1,5 @@
 import pottery from "../assets/images/Pottery.png";
-import bubble from "../assets/images/bubbleArt.svg";
+import bubble from "../assets/images/bubble.png";
 import art from "../assets/images/artandcraftt.png";
 import tattoo from "../assets/images/tattao.png";
 import stone from "../assets/images/painting.png";

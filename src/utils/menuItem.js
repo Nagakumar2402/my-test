@@ -18,6 +18,12 @@ const menuItems = [
     to: "my-test/contact",
     activeClassName: "text-green-700",
   },
+  {
+    id: 5,
+    name: "Location",
+    to: "my-test/location",
+    activeClassName: "text-green-700",
+  },
 ];
 
 export default menuItems;

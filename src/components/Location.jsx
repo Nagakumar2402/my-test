@@ -1,82 +1,24 @@
 import React from "react";
-import { BiMapPin } from "react-icons/bi";
-import { BsCheck2Circle } from "react-icons/bs";
+
 const Location = () => {
-  const CheckCircle = BsCheck2Circle;
-
   return (
-    <div className="mx-auto py-20  max-w-full bg-[#FFF6E0]" id="location">
-      <div className="px-4 lg:grid lg:grid-cols-12 lg:gap-x-6">
-        <div className="grid px-20 py-10 place-content-center lg:col-span-5 lg:px-20">
-          <span className="inline-block p-1 px-3 mb-8 text-xs font-semibold border rounded-full">
-            Pricing that fits your budget
-          </span>
-          <h1 className="text-3xl font-bold md:text-5xl">Zootopia Timing</h1>
-          <div className="flex flex-col my-8 gap-y-6 md:flex-row lg:justify-around">
-            <div className="px-2 space-y-3 md:w-full ">
-              <BiMapPin className="w-5 h-5" />
-              <h3 className="text-xl font-semibold">Address</h3>
-              <p className="w-full text-xl font-semibold text-gray-900">
-                Zootopia- The Funyard
-              </p>
-              <p className="w-full text-base text-gray-700">
-                Near Duke Horse Riding
-              </p>
-              <p className="text-sm font-medium">
-                Opposite Urban Akhara Sector 58
-              </p>
-              <p className="text-sm font-medium">Gurgaon, Haryana</p>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-center md:flex-row lg:col-span-7">
-          <div className="w-full p-5 md:w-3/4">
-            <div className="bg-[#FFF6E0] border-4 shadow-2xl border-white rounded-md bg-opacity-90 font-Oswald">
-              <div className="border-b ">
-                <div className="px-9 py-7">
-                  <h3 className="mb-3 text-xl font-bold leading-snug text-gray-900">
-                    Standard
-                  </h3>
-                  <p className="font-medium leading-relaxed text-gray-500">
-                    Chargeable activities for a group of 10 or more (To be
-                    booked in advance)
-                  </p>
-                </div>
-              </div>
-              <div className="pt-8 px-9 pb-9">
-                <p className="mb-6 font-medium leading-relaxed text-gray-600">
-                  Timings:
-                </p>
-                <ul className="text-xl mb-11 font-ComicSans">
-                  <li className="flex items-center mb-4">
-                    <CheckCircle className="mr-2" size={16} />
-                    <p className="font-semibold leading-normal">
-                      10 am - 01 pm
-                    </p>
-                  </li>
-                  <li className="flex items-center mb-4">
-                    <CheckCircle className="mr-2" size={16} />
-                    <p className="font-semibold leading-normal">2 pm - 5 pm</p>
-                  </li>
-                  <li className="flex items-center mb-4">
-                    <CheckCircle className="mr-2" size={16} />
-                    <p className="font-semibold leading-normal">4 pm -7 pm</p>
-                  </li>
-                </ul>
+    <div className="relative w-full h-[calc(100vh_-_160px)] mt-28">
+      <iframe
+        className="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.1501360953766!2d77.11891027555484!3d28.41472629393807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d21085fde7471%3A0x762426fce95dbd34!2sZootopia-The%20Funyard!5e0!3m2!1sen!2sin!4v1694936118709!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        title="Zootopia - The Funyard"
+        referrerPolicy="no-referrer-when-downgrade"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        aria-hidden="false"
+        tabIndex="0"
+      ></iframe>
 
-                <div className="md:inline-block">
-                  <button
-                    type="button"
-                    className="px-3 py-2 text-sm font-semibold text-white capitalize bg-black rounded-md shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                  >
-                    contact us
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <iframe></iframe>
     </div>
   );
 };

@@ -1,9 +1,17 @@
 import React from "react";
 import monkey from "../assets/images/monkey.png";
+import { motion } from "framer-motion";
+import homeVariants from "../utils/homeVariant";
 
 const About = () => {
   return (
-    <div className="relative w-screen mx-auto text-gray-100 bg-gray-800 md:h-screen">
+    <motion.div
+      variants={homeVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="relative w-screen mx-auto text-gray-100 bg-gray-800 md:h-screen"
+    >
       <div className="w-full px-10 py-20 mx-auto space-y-4 font-bold md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 lg:px-20 lg:py-20">
         <h1 className="text-4xl pt-14   font-extrabold leading-[50px] tracking-widest text-[#016A70] font-ComicSans ">
           About Us
@@ -52,7 +60,7 @@ const About = () => {
           </div>
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

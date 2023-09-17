@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Location from "./components/Location";
+import Location from "./pages/Location";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { FloatingWhatsApp } from "react-floating-whatsapp";

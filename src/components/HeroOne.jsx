@@ -1,9 +1,8 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import one from "../assets/images/one.png";
-import CS from "../assets/images/c2.png";
-import CS1 from "../assets/images/c2.1.png";
+import CS from "../assets/images/c2.1.png";
+import CS1 from "../assets/images/ce.png";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { IoTimerOutline } from "react-icons/io5";
 const HeroBanner = () => {
@@ -32,14 +31,6 @@ const HeroBanner = () => {
           </div>
         )}
       >
-        <div className="w-full overflow-hidden font-Oswald">
-          <div className="relative overflow-hidden ">
-            <img
-              src={one}
-              className="aspect-[16/10] md:aspect-auto object-cover  "
-            />
-          </div>
-        </div>
         <div className="w-full overflow-hidden font-Oswald ">
           <div className="relative overflow-hidden ">
             <img

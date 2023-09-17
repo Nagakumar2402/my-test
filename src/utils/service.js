@@ -1,9 +1,9 @@
-import pottery from "../assets/images/Pottery.png";
-import bubble from "../assets/images/bubble.png";
-import art from "../assets/images/artandcraftt.png";
-import tattoo from "../assets/images/tattao.png";
-import stone from "../assets/images/painting.png";
-import game from "../assets/images/game.png";
+import pottery from "../assets/images/pricing/Potty.png";
+import bubble from "../assets/images/pricing/bubble.png";
+import art from "../assets/images/pricing/artandcraft.png";
+import tattoo from "../assets/images/pricing/tatto.png";
+import stone from "../assets/images/pricing/stoneart.png";
+import game from "../assets/images/pricing/game.png";
 
 const services1 = [
   {

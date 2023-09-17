@@ -1,8 +1,15 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import homeVariants from "../utils/homeVariant";
 const Contact = () => {
   return (
-    <section className="grid w-screen h-screen py-6 bg-gray-800 place-items-center text-gray-50">
+    <motion.section
+      variants={homeVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="grid w-screen h-screen py-6 bg-gray-800 place-items-center text-gray-50"
+    >
       <div className="grid grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
           <h1 className="text-4xl font-bold">Get in touch</h1>
@@ -98,7 +105,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

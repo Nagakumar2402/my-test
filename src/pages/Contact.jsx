@@ -1,7 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import homeVariants from "../utils/homeVariant";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const [verification, setVerification] = useState({
+    verified: false,
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { fullName, email, message } = formData;
+
+    if (isValidEmail(email)) {
+      setVerification({
+        verified: true,
+        message: "Verification successful. Sending message...",
+      });
+
+      const number = "09971371115";
+      const whatsappMessage = `https://wa.me/${number}?text=Hello, ${fullName}!%0AEmail: ${email}%0A${message}`;
+
+      window.open(whatsappMessage, "_blank");
+
+      setFormData({
+        fullName: "",
+        email: "",
+        message: "",
+      });
+    } else {
+      setVerification({
+        verified: false,
+        message: "Verification failed. Please enter a valid email address.",
+      });
+    }
+  };
+
+  const isValidEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+  };
+
   return (
     <motion.section
       variants={homeVariants}
@@ -61,22 +111,29 @@ const Contact = () => {
           </div>
         </div>
         <form
-          novalidate=""
+          noValidate=""
           className="flex flex-col py-6 space-y-6 md:py-0 md:px-6"
+          onSubmit={handleSubmit}
         >
           <label className="block">
             <span className="mb-1">Full name</span>
             <input
               type="text"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
               placeholder="Leroy Jenkins"
               className="block w-full bg-gray-800 rounded-md shadow-sm focus:ring focus:ri"
             />
           </label>
           <label className="block">
-            <span className="mb-1">Email address</span>
+            <span className="mb-1">Email</span>
             <input
               type="email"
-              placeholder="leroy@jenkins.com"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="zHt1d@example.com"
               className="block w-full bg-gray-800 rounded-md shadow-sm focus:ring focus:ri"
             />
           </label>
@@ -84,16 +141,20 @@ const Contact = () => {
             <span className="mb-1">Message</span>
             <textarea
               rows="3"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Write your message here..."
               className="block w-full bg-gray-800 rounded-md focus:ring focus:ri"
             ></textarea>
           </label>
           <button
-            type="button"
+            type="submit"
             className="inline-flex items-center self-center justify-center w-full px-8 py-2 text-lg text-gray-900 bg-teal-400 rounded focus:ring hover:ring focus:ri hover:ri"
           >
             Submit
             <svg
-              class="flex-shrink-0 w-4 h-4 ml-3 undefined undefined group-hover:translate-x-1 transition-transform duration-500 ease-in"
+              className="flex-shrink-0 w-4 h-4 ml-3 transition-transform duration-500 ease-in"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="24"
@@ -103,6 +164,17 @@ const Contact = () => {
               <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"></path>
             </svg>
           </button>
+          {verification.message && (
+            <p
+              className={
+                verification.verified
+                  ? "text-green-500"
+                  : "text-red-500 w-60 text-center mx-auto"
+              }
+            >
+              {verification.message}
+            </p>
+          )}
         </form>
       </div>
     </motion.section>

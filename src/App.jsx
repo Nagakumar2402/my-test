@@ -34,7 +34,7 @@ const App = () => {
           </Routes>
 
           <FloatingWhatsApp
-            phoneNumber="9032161244"
+            phoneNumber="09971371115"
             accountName="Zootopia - The Funyard"
             allowEsc
             allowClickAway

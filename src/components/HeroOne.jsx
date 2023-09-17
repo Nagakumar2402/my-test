@@ -43,7 +43,7 @@ const HeroBanner = () => {
           <div className="relative overflow-hidden ">
             <img
               src={CS}
-              className="aspect-[16/10] lg:h-[650px]  md:aspect-auto object-contain  "
+              className="aspect-[16/10]   md:aspect-auto object-cover  "
             />
           </div>
         </div>

@@ -49,7 +49,7 @@ const Faq = () => {
           </div>
         ))}
       </div>
-      <p className="mt-6 text-base text-center text-gray-600">
+      {/* <p className="mt-6 text-base text-center text-gray-600">
         Can&apos;t find what you&apos;re looking for?{" "}
         <a
           href="#"
@@ -58,7 +58,7 @@ const Faq = () => {
         >
           Contact our support
         </a>
-      </p>
+      </p> */}
     </section>
   );
 };

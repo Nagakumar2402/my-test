@@ -1,4 +1,4 @@
-import pottery from "../assets/images/pricing/Potty.png";
+import pottery from "../assets/images/pricing/potty.png";
 import bubble from "../assets/images/pricing/bubble.png";
 import art from "../assets/images/pricing/artandcraft.png";
 import tattoo from "../assets/images/pricing/tatto.png";

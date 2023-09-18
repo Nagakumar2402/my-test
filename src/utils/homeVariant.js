@@ -1,5 +1,5 @@
 const homeVariants = {
-  hidden: { y: "-100vh" },
+  hidden: { y: -100 },
   visible: {
     y: 0,
     transition: {

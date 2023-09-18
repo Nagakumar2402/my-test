@@ -1,21 +1,26 @@
 import React from "react";
 import HeroBanner from "../components/HeroOne";
-import Service from "../components/Service";
-import About from "../components/About";
 import Faq from "../components/Fqa";
-import Location from "../components/Location";
 import Pricing from "../components/Pricing";
 import FooterOne from "../components/Footer";
+import Events from "../components/Events";
+import homeVariants from "../utils/homeVariant";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
-    <>
+    <motion.div
+      variants={homeVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <HeroBanner />
-      <Service />
+      <Events />
       <Pricing />
       <Faq />
       <FooterOne />
-    </>
+    </motion.div>
   );
 };
 export default HomePage;

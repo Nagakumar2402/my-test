@@ -1,14 +1,13 @@
-"use client";
-
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import one from "../assets/images/one.png";
+import CS from "../assets/images/c2.1.png";
+import CS1 from "../assets/images/ce.png";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
-import { BiCheckCircle } from "react-icons/bi";
+import { IoTimerOutline } from "react-icons/io5";
 const HeroBanner = () => {
   return (
-    <div className="relative  text-white text-[20px] w-full  mx-auto" id="home">
+    <div className="relative  text-white text-[20px] w-full  mx-auto">
       <Carousel
         autoPlay={true}
         infiniteLoop={true}
@@ -32,40 +31,55 @@ const HeroBanner = () => {
           </div>
         )}
       >
-        <div className="w-full overflow-hidden font-Oswald">
+        <div className="w-full overflow-hidden font-Oswald ">
           <div className="relative overflow-hidden ">
             <img
-              src={one}
-              className="aspect-[16/10] md:aspect-auto object-cover  "
+              src={CS}
+              className="aspect-[16/10]   md:aspect-auto object-cover  "
             />
           </div>
         </div>
         <div className="w-full overflow-hidden font-Oswald ">
           <div className="relative overflow-hidden ">
             <img
-              src={one}
-              className="aspect-[16/10] md:aspect-auto object-cover  "
+              src={CS1}
+              className="aspect-[16/10]   md:aspect-auto object-cover  "
             />
           </div>
         </div>
       </Carousel>
-      <div className="absolute z-1 md:w-[30%] h-48 green-top right-0  md:-bottom-32 border-2 md:right-64 rounded-2xl">
-        <div className="pt-8 px-9 pb-9">
-          <p className="mb-2 font-bold leading-relaxed text-gray-900 border-b-2">
+      <div className="absolute z-1 w-[200px] md:w-[300px] flex items-center justify-center h-28 md:h-48 green-top right-0 -bottom-20 md:-bottom-32 border-2 md:right-36 rounded-2xl">
+        <div className="py-8 px-9">
+          <p className="font-bold leading-relaxed text-gray-900 border-b-2 border-gray-200 md:mb-2">
             Timings:
           </p>
-          <ul className="text-lg text-end text-[#484646] mb-11 font-ComicSans">
-            <li className="flex items-center ">
-              <BiCheckCircle className="mr-2" size={16} />
-              <p className="font-semibold leading-normal">10 am - 01 pm</p>
+          <ul className="md:text-lg text-[#484646] md:m-5 font-ComicSans">
+            <li className="flex items-center">
+              <IoTimerOutline
+                className="text-base font-bold md:mr-2 md:text-xl"
+                size={16}
+              />
+              <p className="text-sm font-semibold leading-normal md:text-xl ">
+                10 am - 01 pm
+              </p>
             </li>
-            <li className="flex items-center ">
-              <BiCheckCircle className="mr-2" size={16} />
-              <p className="font-semibold leading-normal">2 pm - 5 pm</p>
+            <li className="flex items-center">
+              <IoTimerOutline
+                className="text-base font-bold md:mr-2 md:text-xl"
+                size={16}
+              />
+              <p className="text-sm font-semibold leading-normal md:text-xl">
+                2 pm - 5 pm
+              </p>
             </li>
-            <li className="flex items-center ">
-              <BiCheckCircle className="mr-2" size={16} />
-              <p className="font-semibold leading-normal">4 pm -7 pm</p>
+            <li className="flex items-center">
+              <IoTimerOutline
+                className="text-base font-bold md:mr-2 md:text-xl"
+                size={16}
+              />
+              <p className="text-sm font-semibold leading-normal md:text-xl">
+                4 pm -7 pm
+              </p>
             </li>
           </ul>
         </div>

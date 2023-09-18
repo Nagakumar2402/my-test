@@ -2,22 +2,27 @@ const menuItems = [
   {
     id: 1,
     name: "Home",
-    to: "#home",
+    to: "my-test/",
+    activeClassName: "text-green-700",
   },
-  {
-    id: 2,
-    name: "Locations",
-    to: "#location",
-  },
+
   {
     id: 3,
     name: "About",
-    to: "#about",
+    to: "my-test/about",
+    activeClassName: "text-green-700",
   },
   {
     id: 4,
     name: "Contact",
-    to: "#contact",
+    to: "my-test/contact",
+    activeClassName: "text-green-700",
+  },
+  {
+    id: 5,
+    name: "Location",
+    to: "my-test/location",
+    activeClassName: "text-green-700",
   },
 ];
 

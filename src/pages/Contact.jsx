@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import homeVariants from "../utils/homeVariant";
+import {useNavigate} from "react-router-dom"
 
 const Contact = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -22,6 +24,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { fullName, email, message } = formData;
+    
 
     if (isValidEmail(email)) {
       setVerification({
@@ -29,9 +32,9 @@ const Contact = () => {
         message: "Verification successful. Sending message...",
       });
 
-      const number = "09971371115";
-      const whatsappMessage = `https://wa.me/${number}?text=Hello, ${fullName}!%0AEmail: ${email}%0A${message}`;
-
+      const number = "+919971371115";
+      const whatsappMessage = `https://wa.me/${number}?text=Hello, I am ${fullName}!%0AEmail: ${email}%0A${message}`;
+      navigate("/");
       window.open(whatsappMessage, "_blank");
 
       setFormData({
@@ -58,10 +61,10 @@ const Contact = () => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="grid w-screen h-screen py-6 bg-gray-800 place-items-center text-gray-50"
+      className="grid w-screen lg:h-screen py-10 lg:py-6 bg-gray-800 place-items-center text-gray-50"
     >
       <div className="grid grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-        <div className="py-6 md:py-0 md:px-6">
+        <div className="py-24 md:py-0 md:px-6">
           <h1 className="text-4xl font-bold">Get in touch</h1>
           <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
           <div className="space-y-4">

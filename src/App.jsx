@@ -9,6 +9,7 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 import icon from "./assets/images/whatsApp.jpeg";
 import mp3 from "./assets/whatsapp-notification.mp3";
 import Loader from "./components/Loader";
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
   const location = useLocation();
@@ -20,7 +21,8 @@ const App = () => {
     }, 3000);
   }, []);
   return (
-    <div className=" max-w-screen">
+    <AnimatePresence mode="wait">
+      <div className=" max-w-screen">
       {loader ? (
         <Loader />
       ) : (
@@ -45,6 +47,7 @@ const App = () => {
         </>
       )}
     </div>
+    </AnimatePresence>
   );
 };
 

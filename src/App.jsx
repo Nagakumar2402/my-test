@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
+
 import { Route, Routes, useLocation } from "react-router-dom";
+import { Loader, Navbar } from "./components/index";
 import HomePage from "./pages/HomePage";
 import Location from "./pages/Location";
 import Contact from "./pages/Contact";
@@ -8,9 +9,9 @@ import About from "./pages/About";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import icon from "./assets/images/whatsApp.jpeg";
 import mp3 from "./assets/whatsapp-notification.mp3";
-import Loader from "./components/Loader";
+
 import { AnimatePresence } from "framer-motion";
-import Gallery from "./components/Gallery";
+
 const App = () => {
   const location = useLocation();
   const [loader, setLoader] = useState(true);
@@ -21,35 +22,33 @@ const App = () => {
     }, 3000);
   }, []);
   return (
-  <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait">
       <div className=" max-w-screen">
-      {loader ? (
-        <Loader />
-      ) : (
-        <>
-          <Navbar />
-          <Routes location={location} key={location.pathname}>
-            <Route path="my-test/" element={<HomePage />} />
-            <Route path="my-test/about" element={<About />} />
-            <Route path="my-test/location" element={<Location />} />
-            <Route path="my-test/contact" element={<Contact />} />
-            <Route path="my-test/gallery" element={<Gallery />} />
+        <Navbar />
+        {loader ? (
+          <Loader />
+        ) : (
+          <>
+            <Routes location={location} key={location.pathname}>
+              <Route path="my-test/" element={<HomePage />} />
+              <Route path="my-test/about" element={<About />} />
+              <Route path="my-test/location" element={<Location />} />
+              <Route path="my-test/contact" element={<Contact />} />
+            </Routes>
 
-          </Routes>
-
-          <FloatingWhatsApp
-            phoneNumber="+919971371115"
-            accountName="Zootopia - The Funyard"
-            allowEsc
-            allowClickAway
-            notification
-            notificationSoundSrc={mp3}
-            avatar={icon}
-          />
-        </>
-      )}
-    </div>
-  </AnimatePresence>
+            <FloatingWhatsApp
+              phoneNumber="+919971371115"
+              accountName="Zootopia - The Funyard"
+              allowEsc
+              allowClickAway
+              notification
+              notificationSoundSrc={mp3}
+              avatar={icon}
+            />
+          </>
+        )}
+      </div>
+    </AnimatePresence>
   );
 };
 

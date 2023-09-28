@@ -39,7 +39,7 @@ const Navbar = () => {
       }   capitalize`}
     >
       <div className="flex items-center justify-between max-w-full py-2 pr-4 mx-auto sm:px-2 lg:px-4">
-        <div className="inline-flex items-center space-x-2">
+        <div className="inline-flex items-center space-x-2 pr-96">
           <span>
             <Link to={"my-test/"}>
               <img src={icon} alt="" className="w-auto h-20" />
@@ -52,10 +52,13 @@ const Navbar = () => {
               <li key={item.id}>
                 <NavLink
                   to={item.to}
-                  className="inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-700"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "inline-flex items-center text-base font-semibold text-yellow-600"
+                      : "inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-yellow-900 "
+                  }
                 >
                   {item.name}
-                
                 </NavLink>
               </li>
             ))}

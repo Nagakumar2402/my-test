@@ -5,8 +5,14 @@ const Pricing = () => {
   return (
     <div className="w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10 ">
       <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-[#016A70] font-ComicSans">
-        Zootopia Ticket Price
+        Enhance Your
+        <br /> Group Experience <br />
+        with Exciting Add-On Packages!
       </h1>
+      <p className="text-base font-semibold leading-10 tracking-wide text-justify text-gray-500 font-ComicSans">
+        Chargeable activities for a group of 10 or more (To be booked in
+        advance)
+      </p>
 
       <div className="grid items-center w-full max-w-full px-2 py-10 mx-auto space-y-4 md:grid-cols-2 md:gap-10 md:space-y-0 lg:grid-cols-3">
         {services1.map((service, i) => (
@@ -23,7 +29,7 @@ const Pricing = () => {
               <p className="mt-3 text-sm text-gray-600">
                 {service.description.slice(0, 32) + "..."}
               </p>
-              <h3 className="mt-3 text-base text-gray-700">
+              <h3 className="mt-3 text-xl text-gray-700">
                 Price :
                 <span className="font-extrabold text-black">
                   {service.price}
@@ -56,7 +62,7 @@ const Pricing = () => {
               <p className="mt-3 text-sm text-gray-600">
                 {service.description.slice(0, 32) + "..."}
               </p>
-              <h3 className="mt-3 text-base text-gray-700">
+              <h3 className="mt-3 text-xl text-gray-700">
                 Price :
                 <span className="font-extrabold text-black">
                   {service.price}

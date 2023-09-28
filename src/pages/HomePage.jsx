@@ -1,10 +1,14 @@
 import React from "react";
-import HeroBanner from "../components/HeroOne";
-import Faq from "../components/Fqa";
-import Pricing from "../components/Pricing";
-import FooterOne from "../components/Footer";
-import Events from "../components/Events";
+import {
+  HeroBanner,
+  Faq,
+  Pricing,
+  FooterOne,
+  Events,
+  Entry,
+} from "../components/index";
 import homeVariants from "../utils/homeVariant";
+
 import { motion } from "framer-motion";
 
 const HomePage = () => {
@@ -16,6 +20,7 @@ const HomePage = () => {
       exit="exit"
     >
       <HeroBanner />
+      <Entry />
       <Events />
       <Pricing />
       <Faq />

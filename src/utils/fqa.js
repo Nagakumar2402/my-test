@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "Can I bring my own food to the Funyard?",
     answer:
-      "Outside food and beverages are generally not allowed, but we have on-site facilities where you can purchase snacks and refreshments.",
+      "Outside food and beverages are not allowed, but we have on-site facilities where you can purchase snacks and refreshments.",
   },
   {
     question: "Are the animals safe to interact with?",
@@ -72,7 +72,7 @@ const faqs = [
   {
     question:
       "Can I purchase tickets online, or do I need to buy them at the entrance?",
-    answer: "Tickets can be purchased both online and at the entrance.",
+    answer: "Tickets can be purchased both online through whatsapp  and at the entrance.",
   },
   {
     question: "Is there parking available for visitors?",
@@ -81,7 +81,7 @@ const faqs = [
   {
     question: "Do you offer group discounts or packages for larger groups?",
     answer:
-      "Yes, we offer group discounts and packages. Contact us for more information.",
+      "Yes, we offer group discounts and packages. Contact On Whats App us for more information.",
   },
   {
     question:
@@ -94,11 +94,7 @@ const faqs = [
     answer:
       "Yes, we have guidelines to ensure the safety of both visitors and animals. Please follow our staff's instructions.",
   },
-  {
-    question: "Do you have any facilities for people with disabilities?",
-    answer:
-      "Yes, we have facilities to accommodate visitors with disabilities. Please let us know your specific needs in advance.",
-  },
+ 
   {
     question: "Is there a gift shop or souvenir store on the premises?",
     answer: "Yes, we have a gift shop where you can purchase souvenirs.",

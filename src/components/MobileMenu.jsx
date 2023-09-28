@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { AiOutlineClose, IoChevronForward } from "../assets/Icons/index";
+
+import { AiOutlineClose,  } from "../assets/Icons/index";
 import menuItems from "../utils/menuItem";
 import icon from "../assets/images/logo.png";
 import { HashLink as Link } from "react-router-hash-link";
@@ -40,9 +40,7 @@ const MobileMenu = ({ toggleMenu, hideMenu }) => {
                   className="inline-flex items-center text-sm font-semibold tracking-widest transition-all duration-200 hover:text-green-700"
                 >
                   {item.name}
-                  {item.to === "/about" && (
-                    <IoChevronForward className="ml-1" />
-                  )}
+                  {item.to === "/about" }
                 </Link>
               ))}
             </nav>

@@ -55,7 +55,7 @@ const Navbar = () => {
                   className="inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-700"
                 >
                   {item.name}
-                  <IoChevronDown className="ml-1" />
+                
                 </NavLink>
               </li>
             ))}

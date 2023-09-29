@@ -14,39 +14,39 @@ const Entry = () => {
         </div>
         <div className="flex flex-wrap items-stretch -mx-4">
           <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-            <div className="p-6 space-y-6 text-gray-400 bg-gray-900 rounded shadow sm:p-8">
+            <div className="p-6 space-y-6 text-white bg-gray-900 rounded shadow sm:p-8 bg-img1 ">
               <div className="space-y-2">
                 <h4 className="text-2xl font-bold">Zootopia</h4>
-                <span className="text-3xl font-bold md:text-5xl">
+                <span className="text-2xl font-bold md:text-3xl">
                   Entry charges
                 </span>
               </div>
 
-              <div className="animate-pulse inline-block w-full px-5 py-3 text-xl md:text-3xl font-semibold text-center text-black bg-green-700 rounded">
+              <div className=" inline-block w-full px-5 py-1  text-xl md:text-3xl font-semibold text-center border-2 bg-img border-green-700  rounded-lg">
               &#8377; 499 Rs
               </div>
             </div>
           </div>
           <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-            <div className="flex flex-col p-6 space-y-6 text-gray-900 bg-green-700 rounded shadow sm:p-8">
+            <div className="flex flex-col p-6 space-y-6 text-gray-900 bg-yellow-100 shadow-lg  bg-img1 rounded hover:scale-105  sm:p-8">
               <div className="space-y-2">
                 <h4 className="text-2xl font-bold">animals</h4>
-                <span className="text-3xl font-bold md:text-5xl">
+                <span className="text-2xl font-bold md:text-3xl">
                   Feeding charges
                 </span>
               </div>
 
-              <div className="inline-block animate-pulse w-full px-5 py-3 text-xl md:text-3xl font-semibold text-center text-white bg-gray-900 rounded">
+              <div className="inline-block  w-full px-5 py-1 text-xl md:text-3xl font-semibold text-center border-2 bg-img border-gray-900 rounded">
               &#8377; 250 Rs
               </div>
             </div>
           </div>
 
           <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-            <div className="p-6 space-y-6 text-gray-400 bg-gray-900 rounded shadow sm:p-8">
+            <div className="p-6 space-y-6 text-white bg-gray-900 rounded shadow sm:p-8 bg-img2 ">
               <div className="space-y-2">
                 <h4 className="text-2xl font-bold">animals</h4>
-                <span className="text-3xl font-bold md:text-5xl">
+                <span className="text-2xl font-bold md:text-3xl">
                   Treat feed
                 </span>
               </div>
@@ -55,7 +55,7 @@ const Entry = () => {
                 animals)
               </p>
 
-              <div className="inline-block w-full animate-bounce px-5 py-3 text-xl md:text-3xl font-semibold text-center text-black bg-green-700 rounded">
+              <div className="inline-block w-full animate-bounce px-5 py-1 text-xl md:text-3xl font-semibold bg-img  text-center border-2 border-green-700 rounded">
               &#8377; 1250 Rs
               </div>
             </div>

@@ -180,3 +180,10 @@ body {
       20px 0 0 -6px rgba(255, 61, 0, 0.4), 25px 0 0 -8px rgba(255, 61, 0, 0.2);
   }
 }
+
+.bg-img{
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.bg-img1{
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+}

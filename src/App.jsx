@@ -15,13 +15,7 @@ import { AnimatePresence } from "framer-motion";
 const App = () => {
   const location = useLocation();
   const [loader, setLoader] = useState(true);
-  const [showWhatsApp, setShowWhatsApp] = useState(false);
 
-  const openWhatsApp = () => {
-    setShowWhatsApp(!showWhatsApp);
-  };
-
-  console.log(showWhatsApp);
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
@@ -30,7 +24,7 @@ const App = () => {
   return (
     <AnimatePresence mode="wait">
       <div className=" max-w-screen">
-        <Navbar openWhatsApp={openWhatsApp} />
+        <Navbar />
         {loader ? (
           <Loader />
         ) : (
@@ -49,7 +43,6 @@ const App = () => {
               notification
               notificationSoundSrc={mp3}
               avatar={icon}
-              onClick={openWhatsApp}
             />
           </>
         )}

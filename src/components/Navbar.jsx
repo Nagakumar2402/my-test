@@ -34,11 +34,10 @@ const Navbar = () => {
   });
 
   function openWhatsApp() {
-    const phoneNumber = "+919971371115"; // Replace with the desired phone number
-    const message = "Hi"; // Replace with the desired message
+    const phoneNumber = "+919971371115";
     const whatsappURL = `https://api.whatsapp.com/send/?phone=${encodeURIComponent(
       phoneNumber
-    )}&text=${encodeURIComponent(message)}`;
+    )}&text=&type=phone_number&app_absent=0`;
 
     window.open(whatsappURL, "_blank");
   }

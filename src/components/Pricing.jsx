@@ -5,9 +5,7 @@ const Pricing = () => {
   return (
     <div className="w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10 ">
       <h1 className="text-4xl font-extrabold leading-[50px] tracking-widest text-[#016A70] font-ComicSans">
-        Enhance Your
-        <br /> Group Experience <br />
-        with Exciting Add-On Packages
+        Add-On Packages
       </h1>
       <p className="text-base font-semibold leading-10 tracking-wide text-justify text-gray-500 font-ComicSans">
         Chargeable activities for a group of 10 or more (To be booked in

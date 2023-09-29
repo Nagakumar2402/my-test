@@ -4,7 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { Loader, Navbar } from "./components/index";
 import HomePage from "./pages/HomePage";
 import Location from "./pages/Location";
-import Contact from "./pages/Contact";
+
 import About from "./pages/About";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import icon from "./assets/images/whatsApp.jpeg";
@@ -33,7 +33,6 @@ const App = () => {
               <Route path="my-test/" element={<HomePage />} />
               <Route path="my-test/about" element={<About />} />
               <Route path="my-test/location" element={<Location />} />
-              <Route path="my-test/contact" element={<Contact />} />
             </Routes>
 
             <FloatingWhatsApp

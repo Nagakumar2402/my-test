@@ -12,7 +12,7 @@ const MobileMenu = ({ toggleMenu, hideMenu }) => {
             <div className="inline-flex items-center space-x-2">
               <span>
                 <img
-                  className="block w-auto h-12 transition-all duration-200 rounded-full shadow-xl cursor-pointer md:hidden"
+                  className="block w-auto h-12 transition-all duration-200 cursor-pointer md:hidden"
                   src={icon}
                   alt="Your Company"
                 />

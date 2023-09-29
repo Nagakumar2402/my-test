@@ -2,7 +2,7 @@ import React from "react";
 
 const Entry = () => {
   return (
-    <section className="py-20 ">
+    <section className="py-32 md:py-20 ">
       <div className="container flex flex-col items-center justify-center w-full px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-16 text-center ">
           <span className="font-bold tracking-widest text-green-700 uppercase">
@@ -22,8 +22,8 @@ const Entry = () => {
                 </span>
               </div>
 
-              <div className="inline-block w-full px-5 py-3 text-3xl font-semibold text-center text-black bg-green-700 rounded">
-                499 Rs
+              <div className="animate-pulse inline-block w-full px-5 py-3 text-xl md:text-3xl font-semibold text-center text-black bg-green-700 rounded">
+              &#8377; 499 Rs
               </div>
             </div>
           </div>
@@ -36,8 +36,8 @@ const Entry = () => {
                 </span>
               </div>
 
-              <div className="inline-block w-full px-5 py-3 text-3xl font-semibold text-center text-white bg-gray-900 rounded">
-                250 Rs
+              <div className="inline-block animate-pulse w-full px-5 py-3 text-xl md:text-3xl font-semibold text-center text-white bg-gray-900 rounded">
+              &#8377; 250 Rs
               </div>
             </div>
           </div>
@@ -55,8 +55,8 @@ const Entry = () => {
                 animals)
               </p>
 
-              <div className="inline-block w-full px-5 py-3 text-3xl font-semibold text-center text-black bg-green-700 rounded">
-                1250 Rs
+              <div className="inline-block w-full animate-bounce px-5 py-3 text-xl md:text-3xl font-semibold text-center text-black bg-green-700 rounded">
+              &#8377; 1250 Rs
               </div>
             </div>
           </div>

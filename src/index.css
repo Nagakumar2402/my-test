@@ -181,9 +181,14 @@ body {
   }
 }
 
-.bg-img{
+.bg-img {
   clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
 }
-.bg-img1{
+.bg-img1 {
   clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+}
+.bg-shadow {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }

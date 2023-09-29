@@ -39,7 +39,7 @@ const Navbar = () => {
       }   capitalize`}
     >
       <div className="flex items-center justify-between max-w-full py-2 pr-4 mx-auto sm:px-2 lg:px-4">
-        <div className="inline-flex items-center space-x-2 md:pr-[30%]">
+        <div className="inline-flex items-center space-x-2 ">
           <span>
             <Link to={"my-test/"}>
               <img src={icon} alt="" className="w-auto h-20" />

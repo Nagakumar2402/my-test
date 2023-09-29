@@ -72,11 +72,12 @@ const faqs = [
   {
     question:
       "Can I purchase tickets online, or do I need to buy them at the entrance?",
-    answer: "Tickets can be purchased both online through whatsapp  and at the entrance.",
+    answer:
+      "Tickets can be purchased both online through whatsapp  and at the entrance.",
   },
   {
     question: "Is there parking available for visitors?",
-    answer: "Yes, we have parking facilities for visitors.",
+    answer: "Yes, we have limited parking   facilities for visitors.",
   },
   {
     question: "Do you offer group discounts or packages for larger groups?",
@@ -94,7 +95,7 @@ const faqs = [
     answer:
       "Yes, we have guidelines to ensure the safety of both visitors and animals. Please follow our staff's instructions.",
   },
- 
+
   {
     question: "Is there a gift shop or souvenir store on the premises?",
     answer: "Yes, we have a gift shop where you can purchase souvenirs.",

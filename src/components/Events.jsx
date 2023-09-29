@@ -27,7 +27,7 @@ const Events = () => {
           We have <br />
           many <span className="text-[#016A70]">Category Event</span>
         </h1>
-        <p className="py-5  leading-10 font-ComicSans font-semibold tracking-wide text-gray-500  lg:w-[44%] text-justify text-base ">
+        <p className="py-5  leading-10 font-ComicSans font-semibold tracking-wide text-gray-500  lg:w-[90%] text-justify text-base ">
           <span className="font-extrabold font-Oswald">
             At Zootopia - The Funyard
           </span>

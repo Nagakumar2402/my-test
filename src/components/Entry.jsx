@@ -13,7 +13,21 @@ const Entry = () => {
           </h2>
         </div>
         <div className="flex flex-wrap items-stretch -mx-4">
-          <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-[30%] lg:mb-0">
+          <div className="w-full mb-8 sm:px-4 md:w-full lg:w-1/3 lg:mb-0">
+            <div className="flex flex-col p-6 space-y-6 text-white bg-gray-900 rounded shadow-2xl bg-img1 hover:scale-105 sm:p-8">
+              <div className="space-y-2">
+                <h4 className="text-2xl font-bold">animals</h4>
+                <span className="text-2xl font-bold md:text-3xl">
+                  Feeding charges
+                </span>
+              </div>
+
+              <div className="inline-block w-full px-5 py-1 text-xl font-semibold text-center border-2 border-green-700 rounded md:text-3xl bg-img">
+                &#8377; 250 Rs
+              </div>
+            </div>
+          </div>
+          <div className="w-full mb-8 sm:px-4 md:w-full lg:w-1/3 lg:mb-0">
             <div className="p-6 space-y-6 text-white bg-gray-900 rounded shadow sm:p-8 bg-img1 ">
               <div className="space-y-2">
                 <h4 className="text-2xl font-bold">Zootopia</h4>
@@ -27,7 +41,7 @@ const Entry = () => {
               </div>
             </div>
           </div>
-          <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-[40%] lg:mb-0">
+          <div className="w-full mb-8 sm:px-4 md:w-full lg:w-1/3 lg:mb-0">
             <div className="p-6 space-y-6 text-white bg-gray-900 rounded shadow sm:p-8 bg-img1 ">
               <div className="space-y-2">
                 <h4 className="text-2xl font-bold">animals</h4>
@@ -42,20 +56,6 @@ const Entry = () => {
 
               <div className="inline-block w-full px-5 py-1 text-xl font-semibold text-center border-2 border-green-700 rounded animate-bounce md:text-3xl bg-img">
                 &#8377; 1250 Rs
-              </div>
-            </div>
-          </div>
-          <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-[30%] lg:mb-0">
-            <div className="flex flex-col p-6 space-y-6 text-white bg-gray-900 rounded shadow-2xl bg-img1 hover:scale-105 sm:p-8">
-              <div className="space-y-2">
-                <h4 className="text-2xl font-bold">animals</h4>
-                <span className="text-2xl font-bold md:text-3xl">
-                  Feeding charges
-                </span>
-              </div>
-
-              <div className="inline-block w-full px-5 py-1 text-xl font-semibold text-center border-2 border-green-700 rounded md:text-3xl bg-img">
-                &#8377; 250 Rs
               </div>
             </div>
           </div>

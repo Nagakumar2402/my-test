@@ -33,9 +33,14 @@ const HeroBanner = () => {
       >
         <div className="w-full overflow-hidden font-Oswald ">
           <div className="relative overflow-hidden ">
-            <img
+           
+          <img
               src={CS}
-              className="aspect-[16/10]   md:aspect-auto object-cover  "
+              alt=""
+              width="2000"
+              height="990"
+              loading="eager"
+              sizes="(min-width: 1601px) 2000px,(min-width: 768px) and (max-width: 1600px) 1200px,(max-width: 767px) 100vw, 900px"
             />
           </div>
         </div>
@@ -43,7 +48,11 @@ const HeroBanner = () => {
           <div className="relative overflow-hidden ">
             <img
               src={CS1}
-              className="aspect-[16/10]   md:aspect-auto object-cover  "
+              alt=""
+              width="2000"
+              height="990"
+              loading="eager"
+              sizes="(min-width: 1601px) 2000px,(min-width: 768px) and (max-width: 1600px) 1200px,(max-width: 767px) 100vw, 900px"
             />
           </div>
         </div>

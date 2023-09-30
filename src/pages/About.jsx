@@ -1,5 +1,4 @@
 import React from "react";
-import monkey from "../assets/images/monkey.png";
 import { motion } from "framer-motion";
 import homeVariants from "../utils/homeVariant";
 
@@ -23,7 +22,7 @@ const About = () => {
               <div className="relative flex-shrink-0 w-48 h-72">
                 <img
                   className="relative object-cover w-48 h-48 rounded-full"
-                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
                   alt=""
                 />
               </div>
@@ -53,7 +52,7 @@ const About = () => {
                 </blockquote>
                 <p className="text-xl font-semibold mt-7">Madhulika Singh</p>
                 <p className="mt-1 text-base ">
-                  Managing Director - Zootopia - The Funyard
+                  Founder of- Zootopia - The Funyard
                 </p>
               </div>
             </div>

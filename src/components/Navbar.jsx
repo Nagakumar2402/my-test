@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="inline-flex items-center space-x-2">
           <span>
             <Link to={"my-test/"}>
-              <img src={icon} alt="" className="w-auto h-20" />
+              <img src={icon} alt="" className="w-auto md:h-20 h-10" />
             </Link>
           </span>
         </div>

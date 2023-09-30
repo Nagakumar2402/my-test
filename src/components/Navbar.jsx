@@ -91,7 +91,7 @@ const Navbar = () => {
           />
         </div>
         {isMenuOpen && (
-          <MobileMenu toggleMenu={toggleMenu} hideMenu={hideMenu} />
+          <MobileMenu toggleMenu={toggleMenu} hideMenu={hideMenu} openWhatsApp={openWhatsApp} />
         )}
       </div>
     </div>

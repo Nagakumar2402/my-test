@@ -42,6 +42,7 @@ const App = () => {
               allowClickAway
               notification
               notificationSoundSrc={mp3}
+              notificationSound={true}
               avatar={icon}
             />
           </>

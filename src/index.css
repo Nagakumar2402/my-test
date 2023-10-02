@@ -184,15 +184,5 @@ body {
 .bg-img {
   clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
 }
-.bg-img1 {
-  clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
-}
-/* @media screen and (max-width: 767px) {
-  .bg-img {
-    clip-path: none;
-  }
-  .bg-img1 {
-    clip-path: none;
-  }
-} */
+
   

@@ -42,7 +42,7 @@ const Pricing = () => {
         <img
           src={story}
           alt=""
-          className="w-full h-full  aspect-[16/9] md:aspect-auto rounded-lg "
+          className="w-full h-full md:object-cover md:object-top  aspect-[16/9] md:aspect-auto rounded-lg "
         />
       </div>
       <div className="grid items-center w-full max-w-full px-2 py-10 mx-auto space-y-4 md:py-20 md:grid-cols-2 md:gap-10 md:space-y-0 lg:grid-cols-3">

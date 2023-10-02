@@ -18,7 +18,7 @@ const Events = () => {
   };
 
   return (
-    <div className="pt-16 max-w-screen md:pt-5">
+    <div className=" max-w-screen">
       <div
         className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10"
         id="top"

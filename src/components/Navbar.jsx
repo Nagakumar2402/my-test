@@ -3,9 +3,11 @@ import { AiOutlineMenu, IoChevronDown } from "../assets/Icons/index";
 import icon from "../assets/images/logo.png";
 import MobileMenu from "./MobileMenu";
 import menuItems from "../utils/menuItem";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
+import pdfUrl from "../assets/images/DONISHA.pdf";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [show, setShow] = useState(false);
 
@@ -38,8 +40,12 @@ const Navbar = () => {
     const whatsappURL = `https://api.whatsapp.com/send/?phone=${encodeURIComponent(
       phoneNumber
     )}&text=&type=phone_number&app_absent=0`;
-
     window.open(whatsappURL, "_blank");
+    navigate("my-test/");
+  }
+  function openPdfInNewPage(pdfUrl) {
+    window.open(pdfUrl, '_blank');
+    navigate("my-test/");
   }
 
   return (
@@ -79,6 +85,16 @@ const Navbar = () => {
                 className="inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-800"
               >
                 Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+          
+                onClick={openPdfInNewPage.bind(this, pdfUrl)}
+                className="inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-800"
+              >
+                PARTY PACKAGE
               </a>
             </li>
           </ul>

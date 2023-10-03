@@ -46,7 +46,6 @@ const Navbar = () => {
   }
   function openPdfInNewPage(pdfUrl) {
     window.open(pdfUrl, "_blank");
-    navigate("my-test/");
   }
 
   return (
@@ -94,7 +93,7 @@ const Navbar = () => {
                 onClick={openPdfInNewPage.bind(this, pdfUrl)}
                 className="inline-flex items-center text-base font-semibold tracking-widest capitalize transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-800"
               >
-                PARTY PACKAGE
+                Party Packages
               </a>
             </li>
           </ul>

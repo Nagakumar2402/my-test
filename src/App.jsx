@@ -11,6 +11,7 @@ import icon from "./assets/images/whatsApp.jpeg";
 import mp3 from "./assets/whatsapp-notification.mp3";
 
 import { AnimatePresence } from "framer-motion";
+import Trams from "./components/Trams";
 
 const App = () => {
   const location = useLocation();
@@ -33,6 +34,7 @@ const App = () => {
               <Route path="my-test/" element={<HomePage />} />
               <Route path="my-test/about" element={<About />} />
               <Route path="my-test/location" element={<Location />} />
+              <Route path="my-test/trams" element={<Trams />} />
             </Routes>
 
             <FloatingWhatsApp

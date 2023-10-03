@@ -16,6 +16,11 @@ const menuItems = [
     name: "Location",
     to: "my-test/location",
   },
+  {
+    id: 6,
+    name: "Trams",
+    to: "my-test/trams",
+  },
 ];
 
 export default menuItems;

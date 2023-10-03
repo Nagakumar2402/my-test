@@ -38,13 +38,20 @@ const Pricing = () => {
           </div>
         ))}
       </div>
-      <div className=" h-64 lg:h-[500px] overflow-hidden -mx-5 md:-mx-16  rounded-md flex items-center ">
-        <img
-          src={story}
-          alt=""
-          className="w-full h-full md:object-cover md:object-top  aspect-[16/9] md:aspect-auto rounded-lg "
-        />
-      </div>
+      <div className=" -mx-5 md:-mx-16 md:py-1 flex items-center">
+  <img
+    src={story} 
+    alt=""
+className="rounded-xl"
+    width="2400"
+    height="1080"
+    loading="eager"
+    sizes="(min-width: 1601px) 2000px, (min-width: 768px) and (max-width: 1600px) 1200px, (max-width: 767px) 100vw, 900px"
+    
+  />
+</div>
+
+
       <div className="grid items-center w-full max-w-full px-2 py-10 mx-auto space-y-4 md:py-20 md:grid-cols-2 md:gap-10 md:space-y-0 lg:grid-cols-3">
         {services2.map((service, i) => (
           <div key={i} className="overflow-hidden ">

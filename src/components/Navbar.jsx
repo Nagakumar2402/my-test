@@ -17,6 +17,7 @@ const Navbar = () => {
 
   const hideMenu = () => {
     setIsMenuOpen(false);
+    setShow(true);
   };
 
   const NavbarVisibility = () => {
@@ -44,7 +45,7 @@ const Navbar = () => {
     navigate("my-test/");
   }
   function openPdfInNewPage(pdfUrl) {
-    window.open(pdfUrl, '_blank');
+    window.open(pdfUrl, "_blank");
     navigate("my-test/");
   }
 
@@ -58,7 +59,7 @@ const Navbar = () => {
         <div className="inline-flex items-center space-x-2">
           <span>
             <Link to={"my-test/"}>
-              <img src={icon} alt="" className="w-auto md:h-20 h-10" />
+              <img src={icon} alt="" className="w-auto h-10 md:h-20" />
             </Link>
           </span>
         </div>
@@ -90,9 +91,8 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-          
                 onClick={openPdfInNewPage.bind(this, pdfUrl)}
-                className="inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-800"
+                className="inline-flex items-center text-base font-semibold tracking-widest capitalize transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-800"
               >
                 PARTY PACKAGE
               </a>
@@ -107,7 +107,12 @@ const Navbar = () => {
           />
         </div>
         {isMenuOpen && (
-          <MobileMenu toggleMenu={toggleMenu} hideMenu={hideMenu} openWhatsApp={openWhatsApp} />
+          <MobileMenu
+            toggleMenu={toggleMenu}
+            hideMenu={hideMenu}
+            openWhatsApp={openWhatsApp}
+            openPdfInNewPage={openPdfInNewPage}
+          />
         )}
       </div>
     </div>

@@ -93,7 +93,7 @@ const faqs = [
     question:
       "Are there any rules or guidelines for interacting with the animals?",
     answer:
-      "Yes, we have guidelines to ensure the safety of both visitors and animals. Please follow our staff's instructions.",
+      "Yes, we have guidelines to ensure the safety of both visitors and animals. Please follow our staff's instructions. more information goes GUIDELINES TAB.",
   },
 
   {

@@ -18,7 +18,7 @@ const menuItems = [
   },
   {
     id: 6,
-    name: "Trams",
+    name: "Guidelines",
     to: "my-test/trams",
   },
 ];

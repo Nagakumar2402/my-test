@@ -50,7 +50,7 @@ const Faq = () => {
                       {q.answer}{" "}
                       <Link
                         to={"/my-test/trams"}
-                        className="text-lg font-bold text-blue-500 underline"
+                        className="text-lg font-bold text-blue-500 underline hover:text-blue-700"
                       >
                         click here
                       </Link>

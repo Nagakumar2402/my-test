@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoChevronDown, IoChevronUp } from "../assets/Icons/index";
 import faq from "../utils/fqa";
+import { Link } from "react-router-dom";
 const Faq = () => {
   const [expanded, setExpanded] = useState([]);
 
@@ -22,43 +23,76 @@ const Faq = () => {
       </div>
 
       <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
-        {faq.map((q, i) => (
+        {/* {faq.map((q) => (
+        
           <div
-            key={i}
+            key={q.id}
             className="transition-all duration-200 border border-gray-400 rounded-md cursor-pointer"
           >
             <button
               type="button"
               className="flex items-start justify-between w-full px-4 py-5 sm:p-6 md:items-center"
-              onClick={() => toggleFaq(i)}
+              onClick={() => toggleFaq(q.id)}
             >
               <span className="flex text-lg font-semibold text-black text-start">
                 {q.question}
               </span>
-              {expanded[i] ? (
+              {expanded[q.id] ? (
                 <IoChevronUp className="w-5 h-5 text-gray-500 md:block" />
               ) : (
                 <IoChevronDown className="w-5 h-5 text-gray-500 md:block" />
               )}
             </button>
-            {expanded[i] && (
+            {expanded[q.id] && (
               <div className="px-4 pb-5 sm:px-6 sm:pb-6">
                 <p className="text-gray-500">{q.answer}</p>
               </div>
             )}
           </div>
+        ))} */}
+
+        {faq.map((q) => (
+          <div
+            key={q.id}
+            className="transition-all duration-200 border border-gray-400 rounded-md cursor-pointer"
+          >
+            <button
+              type="button"
+              className="flex items-start justify-between w-full px-4 py-5 sm:p-6 md:items-center"
+              onClick={() => toggleFaq(q.id)}
+            >
+              <span className="flex text-lg font-semibold text-black text-start">
+                {q.question}
+              </span>
+              {expanded[q.id] ? (
+                <IoChevronUp className="w-5 h-5 text-gray-500 md:block" />
+              ) : (
+                <IoChevronDown className="w-5 h-5 text-gray-500 md:block" />
+              )}
+            </button>
+            {expanded[q.id] && (
+              <div className="px-4 pb-5 sm:px-6 sm:pb-6">
+                <p className="text-gray-500">
+                  {q.id === 19 ? (
+                    <>
+                      {q.answer}{" "}
+                      <Link
+                        to={"/my-test/trams"}
+                        target={"_blank"}
+                        className="text-lg font-bold text-blue-500 underline"
+                      >
+                        click here
+                      </Link>
+                    </>
+                  ) : (
+                    q.answer
+                  )}
+                </p>
+              </div>
+            )}
+          </div>
         ))}
       </div>
-      {/* <p className="mt-6 text-base text-center text-gray-600">
-        Can&apos;t find what you&apos;re looking for?{" "}
-        <a
-          href="#"
-          title=""
-          className="font-semibold text-black hover:underline"
-        >
-          Contact our support
-        </a>
-      </p> */}
     </section>
   );
 };

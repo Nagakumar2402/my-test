@@ -50,7 +50,6 @@ const Faq = () => {
                       {q.answer}{" "}
                       <Link
                         to={"/my-test/trams"}
-                        target={"_blank"}
                         className="text-lg font-bold text-blue-500 underline"
                       >
                         click here

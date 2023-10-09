@@ -32,8 +32,8 @@ const Pricing = () => {
               <h1 className="inline-flex items-center text-lg font-semibold">
                 {service.name}
               </h1>
-              <p className="mt-3 text-sm text-gray-600">
-                {service.description.slice(0, 32) + "..."}
+              <p className="mt-3 text-sm text-center text-gray-600">
+                {service.description}
               </p>
               <h3 className="mt-3 text-xl text-gray-700">
                 Price :
@@ -78,8 +78,8 @@ const Pricing = () => {
               <h1 className="inline-flex items-center text-lg font-semibold">
                 {service.name}
               </h1>
-              <p className="mt-3 text-sm text-gray-600">
-                {service.description.slice(0, 32) + "..."}
+              <p className="mt-3 text-sm text-center text-gray-600">
+                {service.description}
               </p>
               <h3 className="mt-3 text-xl text-gray-700">
                 Price :

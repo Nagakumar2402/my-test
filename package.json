@@ -20,6 +20,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.15.0",
     "react-router-hash-link": "^2.4.3",
+    "react-scroll": "^1.9.0",
     "sweetalert2": "^11.7.27"
   },
   "devDependencies": {

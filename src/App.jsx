@@ -9,13 +9,24 @@ import About from "./pages/About";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import icon from "./assets/images/whatsApp.jpeg";
 import mp3 from "./assets/whatsapp-notification.mp3";
-
 import { AnimatePresence } from "framer-motion";
 import Trams from "./components/Trams";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
   const location = useLocation();
   const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      disable: "mobile",
+
+      easing: "ease-in-out",
+    });
+    AOS.refresh();
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {

@@ -69,20 +69,20 @@ const FooterOne = () => {
               </li>
             </ul>
           </Link>
-          <div className="space-y-3">
+          <div className="space-y-3 cursor-pointer">
             <h2 className="font-bold tracking-widest uppercase text-gray-50">
               Company
             </h2>
             <ul className="space-y-1">
               <li>
-                <Link to="trams">FAQ</Link>
+                <Link to="fqa">FAQ</Link>
               </li>
 
               <li>
-                <Link to="trams">Privacy</Link>
+                <Link to="privacy">Privacy</Link>
               </li>
               <li>
-                <Link to="trams">Terms of Service</Link>
+                <Link>Terms of Service</Link>
               </li>
             </ul>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import pic from "../assets/images/trms.jpg";
 import {
   doNotFarmGuidelines,
   rulesAndInstructions,
@@ -7,13 +7,10 @@ import {
 } from "../utils/do-dont";
 const Trams = () => {
   return (
-    <div
-      name="trams"
-      className="p-5 mx-auto text-gray-100 bg-gray-800 md:py-28 sm:p-10 md:p-16"
-    >
+    <div className="p-5 mx-auto text-gray-100 bg-gray-800 md:py-28 sm:p-10 md:p-16">
       <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
         <img
-          src="https://scontent.fhyd1-2.fna.fbcdn.net/v/t39.30808-6/367977801_122093526266020495_7459375267066263550_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=IGrJsvRH_6IAX_pJ0dF&_nc_ht=scontent.fhyd1-2.fna&oh=00_AfBOt5XtgM7IIzDDqeagNhL1ZEwwrABhJ4lCKQnGzEbRrQ&oe=65211A75"
+          src={pic}
           alt=""
           className="object-contain w-full bg-[#FAF9E4] h-60 sm:h-96"
         />

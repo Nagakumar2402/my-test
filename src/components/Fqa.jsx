@@ -13,6 +13,7 @@ const Faq = () => {
 
   return (
     <section
+      name="fqa"
       data-aos="fade-up"
       data-aos-anchor-placement="top-center"
       className="max-w-full px-2 py-20 mx-auto md:px-0 bg-[#F0F0F0]  "

@@ -3,8 +3,12 @@ import { IoTicket } from "react-icons/io5";
 import { GiCow, GiMonkey } from "react-icons/gi";
 const Entry = () => {
   return (
-    <div className="max-w-screen-xl px-2 py-10 md:py-20 mx-auto lg:px-8">
-      <div className="max-w-3xl my-16 mx-auto  text-center">
+    <div
+      className="max-w-screen-xl px-2 py-10 mx-auto md:py-20 lg:px-8"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
+      <div className="max-w-3xl mx-auto my-16 text-center">
         <span className="font-bold tracking-widest text-green-700 uppercase">
           Pricing
         </span>
@@ -13,7 +17,7 @@ const Entry = () => {
         </h2>
       </div>
       <div className="grid grid-cols-1 text-center gap-y-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-3">
-        <div className="py-4 md:hover:scale-105 md:hover:shadow-2xl shadow-xl md:shadow-none">
+        <div className="py-4 shadow-xl md:hover:scale-105 md:hover:shadow-2xl md:shadow-none">
           <div className="flex items-center justify-center w-20 h-20 mx-auto bg-blue-100 rounded-full">
             <IoTicket className="text-blue-600 h-9 w-9" />
           </div>
@@ -25,7 +29,7 @@ const Entry = () => {
           </p>
         </div>
 
-        <div className="py-4 md:hover:scale-105 shadow-xl md:shadow-none md:hover:shadow-2xl">
+        <div className="py-4 shadow-xl md:hover:scale-105 md:shadow-none md:hover:shadow-2xl">
           <div className="flex items-center justify-center w-20 h-20 mx-auto bg-green-100 rounded-full">
             <GiMonkey className="text-green-600 h-9 w-9" />
           </div>

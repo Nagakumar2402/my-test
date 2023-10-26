@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoChevronDown, IoChevronUp } from "../assets/Icons/index";
 import faq from "../utils/fqa";
+import { Link } from "react-router-dom";
 const Faq = () => {
   const [expanded, setExpanded] = useState([]);
 
@@ -11,7 +12,12 @@ const Faq = () => {
   };
 
   return (
-    <section className="max-w-full px-2 py-20 mx-auto md:px-0 bg-[#F0F0F0]  ">
+    <section
+      name="fqa"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+      className="max-w-full px-2 py-20 mx-auto md:px-0 bg-[#F0F0F0]  "
+    >
       <div className="max-w-2xl mx-auto lg:text-center">
         <h2 className="text-3xl font-bold text-gray-700 sm:text-4xl lg:text-5xl">
           Frequently Asked Questions
@@ -22,43 +28,47 @@ const Faq = () => {
       </div>
 
       <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
-        {faq.map((q, i) => (
+        {faq.map((q) => (
           <div
-            key={i}
+            key={q.id}
             className="transition-all duration-200 border border-gray-400 rounded-md cursor-pointer"
           >
             <button
               type="button"
               className="flex items-start justify-between w-full px-4 py-5 sm:p-6 md:items-center"
-              onClick={() => toggleFaq(i)}
+              onClick={() => toggleFaq(q.id)}
             >
               <span className="flex text-lg font-semibold text-black text-start">
                 {q.question}
               </span>
-              {expanded[i] ? (
+              {expanded[q.id] ? (
                 <IoChevronUp className="w-5 h-5 text-gray-500 md:block" />
               ) : (
                 <IoChevronDown className="w-5 h-5 text-gray-500 md:block" />
               )}
             </button>
-            {expanded[i] && (
+            {expanded[q.id] && (
               <div className="px-4 pb-5 sm:px-6 sm:pb-6">
-                <p className="text-gray-500">{q.answer}</p>
+                <p className="text-gray-500">
+                  {q.id === 19 ? (
+                    <>
+                      {q.answer}{" "}
+                      <Link
+                        to={"/my-test/trams"}
+                        className="text-lg font-bold text-blue-500 underline hover:text-blue-700"
+                      >
+                        click here
+                      </Link>
+                    </>
+                  ) : (
+                    q.answer
+                  )}
+                </p>
               </div>
             )}
           </div>
         ))}
       </div>
-      {/* <p className="mt-6 text-base text-center text-gray-600">
-        Can&apos;t find what you&apos;re looking for?{" "}
-        <a
-          href="#"
-          title=""
-          className="font-semibold text-black hover:underline"
-        >
-          Contact our support
-        </a>
-      </p> */}
     </section>
   );
 };

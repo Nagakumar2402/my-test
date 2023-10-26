@@ -36,14 +36,6 @@ const Navbar = () => {
     };
   });
 
-  function openWhatsApp() {
-    const phoneNumber = "+919971371115";
-    const whatsappURL = `https://api.whatsapp.com/send/?phone=${encodeURIComponent(
-      phoneNumber
-    )}&text=&type=phone_number&app_absent=0`;
-    window.open(whatsappURL, "_blank");
-    navigate("my-test/");
-  }
   function openPdfInNewPage(pdfUrl) {
     window.open(pdfUrl, "_blank");
   }
@@ -78,22 +70,14 @@ const Navbar = () => {
                 </NavLink>
               </li>
             ))}
-            <li>
-              <a
-                href="#"
-                onClick={openWhatsApp}
-                className="inline-flex items-center text-base font-semibold tracking-widest transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-800"
-              >
-                Contact
-              </a>
-            </li>
+
             <li>
               <a
                 href="#"
                 onClick={openPdfInNewPage.bind(this, pdfUrl)}
                 className="inline-flex items-center text-base font-semibold tracking-widest capitalize transition-all duration-200 border-b-2 border-transparent hover:border-black hover:text-green-800"
               >
-                Party Packages
+                Party Menu
               </a>
             </li>
           </ul>
@@ -109,7 +93,6 @@ const Navbar = () => {
           <MobileMenu
             toggleMenu={toggleMenu}
             hideMenu={hideMenu}
-            openWhatsApp={openWhatsApp}
             openPdfInNewPage={openPdfInNewPage}
           />
         )}

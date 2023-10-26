@@ -18,8 +18,13 @@ const Events = () => {
   };
 
   return (
-    <div className=" max-w-screen">
+    <div
+      className=" max-w-screen"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
       <div
+        name="categories"
         className="w-full max-w-full px-10 py-5 mx-auto space-y-4 font-bold lg:px-20 lg:py-10"
         id="top"
       >

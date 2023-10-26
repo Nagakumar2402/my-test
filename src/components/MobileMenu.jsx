@@ -6,7 +6,7 @@ import pdfUrl from "../assets/images/DONISHA.pdf";
 const MobileMenu = ({
   toggleMenu,
   hideMenu,
-  openWhatsApp,
+
   openPdfInNewPage,
 }) => {
   return (
@@ -51,19 +51,10 @@ const MobileMenu = ({
               <div>
                 <a
                   href="#"
-                  onClick={openWhatsApp}
-                  className="inline-flex items-center text-sm font-semibold tracking-widest transition-all duration-200 hover:text-green-700 "
-                >
-                  Contact
-                </a>
-              </div>
-              <div>
-                <a
-                  href="#"
                   onClick={openPdfInNewPage.bind(this, pdfUrl)}
                   className="inline-flex items-center text-sm font-semibold tracking-widest capitalize transition-all duration-200 hover:text-green-700"
                 >
-                  PARTY PACKAGE
+                  PARTY MENU
                 </a>
               </div>
             </nav>

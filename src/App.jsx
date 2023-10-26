@@ -30,7 +30,7 @@ const App = () => {
           <Loader />
         ) : (
           <>
-            <Routes location={location} key={location.pathname}>
+            <Routes location={location} key={location.pathname} basename="/my-test">
               <Route path="my-test/" element={<HomePage />} />
               <Route path="my-test/about" element={<About />} />
               <Route path="my-test/location" element={<Location />} />
